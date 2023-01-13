@@ -2,29 +2,29 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Sauce on Martin Alain</title>
-    <link>https://www.scss.tcd.ie/~alainm/tags/sauce/</link>
+    <link>https://malain35.github.io/tags/sauce/</link>
     <description>Recent content in Sauce on Martin Alain</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>&amp;copy; 2021 Martin Alain</copyright>
+    <copyright>&amp;copy; 2023 Martin Alain</copyright>
     <lastBuildDate>Tue, 04 Jun 2019 00:00:00 +0000</lastBuildDate>
-    <atom:link href="/~alainm/tags/sauce/" rel="self" type="application/rss+xml" />
+    <atom:link href="/tags/sauce/" rel="self" type="application/rss+xml" />
     
     <item>
       <title>The Potential of Light Fields in Media Productions</title>
-      <link>https://www.scss.tcd.ie/~alainm/publication/the_potential_of_light_fields_in_media_productions/</link>
+      <link>https://malain35.github.io/publication/the_potential_of_light_fields_in_media_productions/</link>
       <pubDate>Tue, 04 Jun 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://www.scss.tcd.ie/~alainm/publication/the_potential_of_light_fields_in_media_productions/</guid>
+      <guid>https://malain35.github.io/publication/the_potential_of_light_fields_in_media_productions/</guid>
       <description></description>
     </item>
     
     <item>
       <title>SAUCE</title>
-      <link>https://www.scss.tcd.ie/~alainm/project/sauce/</link>
+      <link>https://malain35.github.io/project/sauce/</link>
       <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://www.scss.tcd.ie/~alainm/project/sauce/</guid>
+      <guid>https://malain35.github.io/project/sauce/</guid>
       <description>
 
 &lt;h2 id=&#34;smart-assets-for-re-use-in-creative-environments&#34;&gt;Smart Assets for re-Use in Creative Environments&lt;/h2&gt;
@@ -40,10 +40,10 @@
 &lt;h2 id=&#34;related-publications&#34;&gt;Related publications&lt;/h2&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.scss.tcd.ie/~alainm/~alainm/publication/the_potential_of_light_fields_in_media_productions/&#34; target=&#34;_blank&#34;&gt;The Potential of Light Fields in Media Productions&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.scss.tcd.ie/~alainm/~alainm/publication/interactive_light_field_tilt-shift_refocus/&#34; target=&#34;_blank&#34;&gt;Interactive Light Field Tilt-Shift Refocus&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.scss.tcd.ie/~alainm/~alainm/publication/a_spatio-angular_binary_descriptor_for_fast_light_field_inter_view_matching/&#34; target=&#34;_blank&#34;&gt;A Spatio-Angular Binary Descriptor for Fast Light Field Inter View Matching&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.scss.tcd.ie/~alainm/~alainm/publication/a_spatio-angular_filter_for_high_quality_sparse_light_field_refocusing/&#34; target=&#34;_blank&#34;&gt;A Spatio-Angular Filter for High Quality Sparse Light Field Refocusing&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://malain35.github.io/publication/the_potential_of_light_fields_in_media_productions/&#34; target=&#34;_blank&#34;&gt;The Potential of Light Fields in Media Productions&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://malain35.github.io/publication/interactive_light_field_tilt-shift_refocus/&#34; target=&#34;_blank&#34;&gt;Interactive Light Field Tilt-Shift Refocus&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://malain35.github.io/publication/a_spatio-angular_binary_descriptor_for_fast_light_field_inter_view_matching/&#34; target=&#34;_blank&#34;&gt;A Spatio-Angular Binary Descriptor for Fast Light Field Inter View Matching&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://malain35.github.io/publication/a_spatio-angular_filter_for_high_quality_sparse_light_field_refocusing/&#34; target=&#34;_blank&#34;&gt;A Spatio-Angular Filter for High Quality Sparse Light Field Refocusing&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>

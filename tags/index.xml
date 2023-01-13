@@ -2,48 +2,48 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Martin Alain</title>
-    <link>https://www.scss.tcd.ie/~alainm/tags/</link>
+    <link>https://malain35.github.io/tags/</link>
     <description>Recent content in Tags on Martin Alain</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>&amp;copy; 2021 Martin Alain</copyright>
+    <copyright>&amp;copy; 2023 Martin Alain</copyright>
     <lastBuildDate>Sun, 01 Jan 2017 00:00:00 +0000</lastBuildDate>
-    <atom:link href="/~alainm/tags/" rel="self" type="application/rss+xml" />
+    <atom:link href="/tags/" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Content tagged as &#39;Academic&#39;</title>
-      <link>https://www.scss.tcd.ie/~alainm/tags/academic/</link>
+      <link>https://malain35.github.io/tags/academic/</link>
       <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://www.scss.tcd.ie/~alainm/tags/academic/</guid>
+      <guid>https://malain35.github.io/tags/academic/</guid>
       <description>&lt;p&gt;Here is a list of all the content that has been tagged as &lt;em&gt;academic&lt;/em&gt;.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Compression</title>
-      <link>https://www.scss.tcd.ie/~alainm/tags/compression/</link>
+      <link>https://malain35.github.io/tags/compression/</link>
       <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://www.scss.tcd.ie/~alainm/tags/compression/</guid>
+      <guid>https://malain35.github.io/tags/compression/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Sauce</title>
-      <link>https://www.scss.tcd.ie/~alainm/tags/sauce/</link>
+      <link>https://malain35.github.io/tags/sauce/</link>
       <pubDate>Tue, 04 Jun 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://www.scss.tcd.ie/~alainm/tags/sauce/</guid>
+      <guid>https://malain35.github.io/tags/sauce/</guid>
       <description></description>
     </item>
     
     <item>
       <title>V Sense</title>
-      <link>https://www.scss.tcd.ie/~alainm/tags/v-sense/</link>
+      <link>https://malain35.github.io/tags/v-sense/</link>
       <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://www.scss.tcd.ie/~alainm/tags/v-sense/</guid>
+      <guid>https://malain35.github.io/tags/v-sense/</guid>
       <description></description>
     </item>
     

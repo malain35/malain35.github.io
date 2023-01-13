@@ -2,20 +2,29 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>2 on Martin Alain</title>
-    <link>https://www.scss.tcd.ie/~alainm/publication_types/2/</link>
+    <link>https://malain35.github.io/publication_types/2/</link>
     <description>Recent content in 2 on Martin Alain</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>&amp;copy; 2021 Martin Alain</copyright>
-    <lastBuildDate>Thu, 23 Jan 2020 00:00:00 +0000</lastBuildDate>
-    <atom:link href="/~alainm/publication_types/2/" rel="self" type="application/rss+xml" />
+    <copyright>&amp;copy; 2023 Martin Alain</copyright>
+    <lastBuildDate>Sun, 05 Jun 2022 00:00:00 +0000</lastBuildDate>
+    <atom:link href="/publication_types/2/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Spectral Analysis of Re-parameterized Light Fields</title>
+      <link>https://malain35.github.io/publication/spectral_analysis_of_re-parameterized_light_fields/</link>
+      <pubDate>Sun, 05 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://malain35.github.io/publication/spectral_analysis_of_re-parameterized_light_fields/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>High Quality Light Field Extraction and Post-Processing for Raw Plenoptic Data</title>
-      <link>https://www.scss.tcd.ie/~alainm/publication/high-quality-light-field-extraction-and-post-processing-for-raw-plenoptic-data/</link>
+      <link>https://malain35.github.io/publication/high-quality-light-field-extraction-and-post-processing-for-raw-plenoptic-data/</link>
       <pubDate>Thu, 23 Jan 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://www.scss.tcd.ie/~alainm/publication/high-quality-light-field-extraction-and-post-processing-for-raw-plenoptic-data/</guid>
+      <guid>https://malain35.github.io/publication/high-quality-light-field-extraction-and-post-processing-for-raw-plenoptic-data/</guid>
       <description>&lt;p&gt;&lt;h2&gt;Implementation&lt;/h2&gt;
 All of our code is available here (please cite the appropriate papers if you use or adapt these codes in your work):&lt;/p&gt;
 
@@ -779,10 +788,10 @@ Our pipeline was applied on a subset of the freely available &lt;a href=&#34;htt
     
     <item>
       <title>Scalable image coding based on epitomes</title>
-      <link>https://www.scss.tcd.ie/~alainm/publication/scalable_image_coding_based_on_epitomes/</link>
+      <link>https://malain35.github.io/publication/scalable_image_coding_based_on_epitomes/</link>
       <pubDate>Tue, 09 May 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://www.scss.tcd.ie/~alainm/publication/scalable_image_coding_based_on_epitomes/</guid>
+      <guid>https://malain35.github.io/publication/scalable_image_coding_based_on_epitomes/</guid>
       <description>
 
 &lt;h2 id=&#34;context-and-goal&#34;&gt;Context and Goal&lt;/h2&gt;
@@ -1781,10 +1790,10 @@ In this work, we propose a clustering-based technique to reduce the self-similar
     
     <item>
       <title>Inter-prediction methods based on linear embedding for video compression</title>
-      <link>https://www.scss.tcd.ie/~alainm/publication/inter_prediction_methods_based_on_linear_embedding_for_video_compression/</link>
+      <link>https://malain35.github.io/publication/inter_prediction_methods_based_on_linear_embedding_for_video_compression/</link>
       <pubDate>Tue, 01 Sep 2015 00:00:00 +0000</pubDate>
       
-      <guid>https://www.scss.tcd.ie/~alainm/publication/inter_prediction_methods_based_on_linear_embedding_for_video_compression/</guid>
+      <guid>https://malain35.github.io/publication/inter_prediction_methods_based_on_linear_embedding_for_video_compression/</guid>
       <description></description>
     </item>
     

@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>1 on Martin Alain</title>
-    <link>https://www.scss.tcd.ie/~alainm/publication_types/1/</link>
+    <link>https://malain35.github.io/publication_types/1/</link>
     <description>Recent content in 1 on Martin Alain</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>&amp;copy; 2021 Martin Alain</copyright>
+    <copyright>&amp;copy; 2023 Martin Alain</copyright>
     <lastBuildDate>Mon, 05 Jul 2021 00:00:00 +0000</lastBuildDate>
-    <atom:link href="/~alainm/publication_types/1/" rel="self" type="application/rss+xml" />
+    <atom:link href="/publication_types/1/" rel="self" type="application/rss+xml" />
     
     <item>
       <title>A spatio-angular filter for high quality sparse light field refocusing</title>
-      <link>https://www.scss.tcd.ie/~alainm/publication/a_spatio-angular_filter_for_high_quality_sparse_light_field_refocusing/</link>
+      <link>https://malain35.github.io/publication/a_spatio-angular_filter_for_high_quality_sparse_light_field_refocusing/</link>
       <pubDate>Mon, 05 Jul 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://www.scss.tcd.ie/~alainm/publication/a_spatio-angular_filter_for_high_quality_sparse_light_field_refocusing/</guid>
+      <guid>https://malain35.github.io/publication/a_spatio-angular_filter_for_high_quality_sparse_light_field_refocusing/</guid>
       <description>&lt;p&gt;&lt;h2&gt;Implementation&lt;/h2&gt;
 &lt;!-- /wp:heading --&gt;&lt;/p&gt;
 
@@ -34,10 +34,10 @@
     
     <item>
       <title>Focus Guided Light Field Saliency Estimation</title>
-      <link>https://www.scss.tcd.ie/~alainm/publication/focus_guided_light_field_saliency_estimation/</link>
+      <link>https://malain35.github.io/publication/focus_guided_light_field_saliency_estimation/</link>
       <pubDate>Mon, 14 Jun 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://www.scss.tcd.ie/~alainm/publication/focus_guided_light_field_saliency_estimation/</guid>
+      <guid>https://malain35.github.io/publication/focus_guided_light_field_saliency_estimation/</guid>
       <description>&lt;p&gt;&lt;h3&gt;Additional Results&lt;/h3&gt;
 &lt;p&gt;Due to the page limit of the venue to which we submitted our work, we could not provide all the results in the manuscript.&amp;nbsp;Here we will share additional results for our study.&lt;/p&gt;
 &lt;p&gt;The data we used were from 4 different databases: &lt;a href=&#34;http://lightfield.stanford.edu/&#34;&gt;Stanford&lt;/a&gt;&lt;sup&gt;1&lt;/sup&gt;, &lt;a href=&#34;https://mmspg.epfl.ch/EPFL-light-field-image-dataset&#34;&gt;EPFL&lt;/a&gt;&lt;sup&gt;2&lt;/sup&gt;, &lt;a href=&#34;https://lightfield-analysis.uni-konstanz.de/&#34;&gt;HCI Heidelberg&lt;sup&gt;3&lt;/sup&gt;&lt;/a&gt;.&lt;/p&gt;
@@ -364,10 +364,10 @@
     
     <item>
       <title>Light Field Style Transfer With Local Angular Consistency</title>
-      <link>https://www.scss.tcd.ie/~alainm/publication/light_field_style_transfer_with_local_angular_consistency/</link>
+      <link>https://malain35.github.io/publication/light_field_style_transfer_with_local_angular_consistency/</link>
       <pubDate>Sun, 06 Jun 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://www.scss.tcd.ie/~alainm/publication/light_field_style_transfer_with_local_angular_consistency/</guid>
+      <guid>https://malain35.github.io/publication/light_field_style_transfer_with_local_angular_consistency/</guid>
       <description>&lt;!-- wp:heading --&gt;
 
 &lt;p&gt;&lt;h2&gt;Implementation&lt;/h2&gt;
@@ -560,10 +560,10 @@
     
     <item>
       <title>A Spatio-Angular Binary Descriptor for Fast Light Field Inter View Matching</title>
-      <link>https://www.scss.tcd.ie/~alainm/publication/a_spatio-angular_binary_descriptor_for_fast_light_field_inter_view_matching/</link>
+      <link>https://malain35.github.io/publication/a_spatio-angular_binary_descriptor_for_fast_light_field_inter_view_matching/</link>
       <pubDate>Sun, 25 Oct 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://www.scss.tcd.ie/~alainm/publication/a_spatio-angular_binary_descriptor_for_fast_light_field_inter_view_matching/</guid>
+      <guid>https://malain35.github.io/publication/a_spatio-angular_binary_descriptor_for_fast_light_field_inter_view_matching/</guid>
       <description>&lt;!-- wp:heading --&gt;
 
 &lt;h2&gt;Implementation&lt;/h2&gt;
@@ -1219,10 +1219,10 @@ https://youtu.be/SyhGy75BMtc
     
     <item>
       <title>Self-supervised light field view synthesis using cycle consistency</title>
-      <link>https://www.scss.tcd.ie/~alainm/publication/self-supervised_light_field_view_synthesis_using_cycle_consistency/</link>
+      <link>https://malain35.github.io/publication/self-supervised_light_field_view_synthesis_using_cycle_consistency/</link>
       <pubDate>Mon, 21 Sep 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://www.scss.tcd.ie/~alainm/publication/self-supervised_light_field_view_synthesis_using_cycle_consistency/</guid>
+      <guid>https://malain35.github.io/publication/self-supervised_light_field_view_synthesis_using_cycle_consistency/</guid>
       <description>&lt;h2&gt;Implementation&lt;/h2&gt;
 
 &lt;p&gt;Please watch our official repo on &lt;a href=&#34;https://github.com/V-Sense&#34; target=&#34;_blank&#34; rel=&#34;noreferrer noopener&#34;&gt;Github&lt;/a&gt;, code will be released soon.&lt;/p&gt;
@@ -1231,10 +1231,10 @@ https://youtu.be/SyhGy75BMtc
     
     <item>
       <title>A Study of Light Field Streaming for Interactive Refocusing</title>
-      <link>https://www.scss.tcd.ie/~alainm/publication/a_study_of_light_field_streaming_for_interactive_refocusing/</link>
+      <link>https://malain35.github.io/publication/a_study_of_light_field_streaming_for_interactive_refocusing/</link>
       <pubDate>Mon, 04 Nov 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://www.scss.tcd.ie/~alainm/publication/a_study_of_light_field_streaming_for_interactive_refocusing/</guid>
+      <guid>https://malain35.github.io/publication/a_study_of_light_field_streaming_for_interactive_refocusing/</guid>
       <description>&lt;p&gt;&lt;h2&gt;Additional results&lt;/h2&gt;
 Detailed RD results for the Lytro Illum, Stanford, and Technicolor datasets using a full synthetic aperture are shown below.
 &lt;table style=&#34;text-align: center; width: 100%;&#34; cellspacing=&#34;2&#34; cellpadding=&#34;2&#34; border=&#34;0&#34; align=&#34;center&#34;&gt;
@@ -1341,10 +1341,10 @@ Detailed RD results for the Stanford dataset using different synthetic aperture 
     
     <item>
       <title>Interactive Light Field Tilt-Shift Refocus</title>
-      <link>https://www.scss.tcd.ie/~alainm/publication/interactive_light_field_tilt-shift_refocus/</link>
+      <link>https://malain35.github.io/publication/interactive_light_field_tilt-shift_refocus/</link>
       <pubDate>Tue, 04 Jun 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://www.scss.tcd.ie/~alainm/publication/interactive_light_field_tilt-shift_refocus/</guid>
+      <guid>https://malain35.github.io/publication/interactive_light_field_tilt-shift_refocus/</guid>
       <description>&lt;p&gt;&lt;h2&gt;Demo Videos:&lt;/h2&gt;
 &lt;iframe src=&#34;https://www.youtube.com/embed/jWJb1phNpp4&#34; width=&#34;560&#34; height=&#34;315&#34; frameborder=&#34;0&#34; allowfullscreen=&#34;allowfullscreen&#34;&gt;&lt;/iframe&gt; &lt;iframe src=&#34;https://www.youtube.com/embed/fwfcKS7nhrw&#34; width=&#34;560&#34; height=&#34;315&#34; frameborder=&#34;0&#34; allowfullscreen=&#34;allowfullscreen&#34;&gt;&lt;/iframe&gt;&lt;/p&gt;
 </description>
@@ -1352,19 +1352,19 @@ Detailed RD results for the Stanford dataset using different synthetic aperture 
     
     <item>
       <title>The Potential of Light Fields in Media Productions</title>
-      <link>https://www.scss.tcd.ie/~alainm/publication/the_potential_of_light_fields_in_media_productions/</link>
+      <link>https://malain35.github.io/publication/the_potential_of_light_fields_in_media_productions/</link>
       <pubDate>Tue, 04 Jun 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://www.scss.tcd.ie/~alainm/publication/the_potential_of_light_fields_in_media_productions/</guid>
+      <guid>https://malain35.github.io/publication/the_potential_of_light_fields_in_media_productions/</guid>
       <description></description>
     </item>
     
     <item>
       <title>A Pipeline for Lenslet Light Field Quality Enhancement</title>
-      <link>https://www.scss.tcd.ie/~alainm/publication/a_pipeline_for_lenslet_light_field_quality_enhancement/</link>
+      <link>https://malain35.github.io/publication/a_pipeline_for_lenslet_light_field_quality_enhancement/</link>
       <pubDate>Thu, 07 Jun 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://www.scss.tcd.ie/~alainm/publication/a_pipeline_for_lenslet_light_field_quality_enhancement/</guid>
+      <guid>https://malain35.github.io/publication/a_pipeline_for_lenslet_light_field_quality_enhancement/</guid>
       <description>&lt;p&gt;&lt;h2&gt;Implementation&lt;/h2&gt;
 All of our code is available here (please cite the appropriate papers if you use or adapt these codes in your work):&lt;/p&gt;
 
@@ -2095,10 +2095,10 @@ Our pipeline was applied on a subset of the freely available &lt;a href=&#34;htt
     
     <item>
       <title>Light Field Super-Resolution via LFBM5D Sparse Coding</title>
-      <link>https://www.scss.tcd.ie/~alainm/publication/light_field_super_resolution_via_lfbm5d_sparse_coding/</link>
+      <link>https://malain35.github.io/publication/light_field_super_resolution_via_lfbm5d_sparse_coding/</link>
       <pubDate>Thu, 07 Jun 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://www.scss.tcd.ie/~alainm/publication/light_field_super_resolution_via_lfbm5d_sparse_coding/</guid>
+      <guid>https://malain35.github.io/publication/light_field_super_resolution_via_lfbm5d_sparse_coding/</guid>
       <description>&lt;p&gt;&lt;h2&gt;Implementation&lt;/h2&gt;
 The MATLAB/C/C++ source code is available on &lt;a href=&#34;https://github.com/malain35/LFBM5D/tree/SR&#34;&gt;github&lt;/a&gt;.&lt;/p&gt;
 
@@ -2903,10 +2903,10 @@ Values highlighted in bold and italic correspond to the best and second best per
     
     <item>
       <title>Light Field Denoising by Sparse 5D Transform Domain Collaborative Filtering</title>
-      <link>https://www.scss.tcd.ie/~alainm/publication/light_field_denoising_by_sparse_5d_transform_domain_collaborative_filtering/</link>
+      <link>https://malain35.github.io/publication/light_field_denoising_by_sparse_5d_transform_domain_collaborative_filtering/</link>
       <pubDate>Mon, 16 Oct 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://www.scss.tcd.ie/~alainm/publication/light_field_denoising_by_sparse_5d_transform_domain_collaborative_filtering/</guid>
+      <guid>https://malain35.github.io/publication/light_field_denoising_by_sparse_5d_transform_domain_collaborative_filtering/</guid>
       <description>&lt;p&gt;This paper was given a &lt;a href=&#34;https://www.beds.ac.uk/mmsp2017/awards&#34;&gt;Top 10% Paper Award&lt;/a&gt; at the MMSP 2017 conference held in Luton, UK.&lt;/p&gt;
 
 &lt;p&gt;For the super-resolution extension SR-LFBM5D, see &lt;a href=&#34;&#34;&gt;this page&lt;/a&gt;.&lt;/p&gt;
@@ -3173,20 +3173,20 @@ Below, we show results for lenslet camera (Lytro) noise removal.
     
     <item>
       <title>Fast and Accurate Optical Flow based Depth Map Estimation from Light Fields</title>
-      <link>https://www.scss.tcd.ie/~alainm/publication/fast-and-accurate-optical-flow-based-depth-map-estimation-from-light-fields/</link>
+      <link>https://malain35.github.io/publication/fast-and-accurate-optical-flow-based-depth-map-estimation-from-light-fields/</link>
       <pubDate>Wed, 30 Aug 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://www.scss.tcd.ie/~alainm/publication/fast-and-accurate-optical-flow-based-depth-map-estimation-from-light-fields/</guid>
+      <guid>https://malain35.github.io/publication/fast-and-accurate-optical-flow-based-depth-map-estimation-from-light-fields/</guid>
       <description>&lt;p&gt;This paper received the &lt;a href=&#34;http://imvip2017.cs.nuim.ie/awards&#34;&gt;Jonathan Campbell Best Paper Award at The Irish Machine Vision and Image Processing Conference, 2017&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Learning clustering-based linear mappings for quantization noise removal</title>
-      <link>https://www.scss.tcd.ie/~alainm/publication/learning_clustering_based_linear_mappings_for_quantization_noise_removal/</link>
+      <link>https://malain35.github.io/publication/learning_clustering_based_linear_mappings_for_quantization_noise_removal/</link>
       <pubDate>Sun, 25 Sep 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://www.scss.tcd.ie/~alainm/publication/learning_clustering_based_linear_mappings_for_quantization_noise_removal/</guid>
+      <guid>https://malain35.github.io/publication/learning_clustering_based_linear_mappings_for_quantization_noise_removal/</guid>
       <description>
 
 &lt;h2 id=&#34;context-and-goal&#34;&gt;Context and Goal&lt;/h2&gt;
@@ -4965,19 +4965,19 @@ This oracle clustering is not reproducible at the decoder side, as it relies on 
     
     <item>
       <title>Epitomic image factorization via neighbor-embedding</title>
-      <link>https://www.scss.tcd.ie/~alainm/publication/epitomic_factorization_via_neighbor_embedding/</link>
+      <link>https://malain35.github.io/publication/epitomic_factorization_via_neighbor_embedding/</link>
       <pubDate>Sun, 27 Sep 2015 00:00:00 +0000</pubDate>
       
-      <guid>https://www.scss.tcd.ie/~alainm/publication/epitomic_factorization_via_neighbor_embedding/</guid>
+      <guid>https://malain35.github.io/publication/epitomic_factorization_via_neighbor_embedding/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Epitome inpainting with in-loop residue coding for image compression</title>
-      <link>https://www.scss.tcd.ie/~alainm/publication/epitome_inpainting_with_in_loop_residue_coding_for_image_compression/</link>
+      <link>https://malain35.github.io/publication/epitome_inpainting_with_in_loop_residue_coding_for_image_compression/</link>
       <pubDate>Mon, 27 Oct 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://www.scss.tcd.ie/~alainm/publication/epitome_inpainting_with_in_loop_residue_coding_for_image_compression/</guid>
+      <guid>https://malain35.github.io/publication/epitome_inpainting_with_in_loop_residue_coding_for_image_compression/</guid>
       <description>
 
 &lt;h2 id=&#34;context-and-goal&#34;&gt;Context and Goal&lt;/h2&gt;
