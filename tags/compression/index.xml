@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Compression on Martin Alain</title>
+    <link>https://www.scss.tcd.ie/~alainm/tags/compression/</link>
+    <description>Recent content in Compression on Martin Alain</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2021 Martin Alain</copyright>
+    <lastBuildDate>Wed, 27 Apr 2016 00:00:00 +0000</lastBuildDate>
+    <atom:link href="/~alainm/tags/compression/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>PhD Thesis</title>
+      <link>https://www.scss.tcd.ie/~alainm/project/phd/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.scss.tcd.ie/~alainm/project/phd/</guid>
+      <description>
+
+&lt;p&gt;&amp;ldquo;A compact video representation format based on spatio-temporal linear embedding and epitome&amp;rdquo;&lt;/p&gt;
+
+&lt;p&gt;Defended on the 12th of January 2016.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.scss.tcd.ie/~alainm/pdf/these_Martin_Alain.pdf&#34; target=&#34;_blank&#34;&gt;[PDF]&lt;/a&gt;
+&lt;a href=&#34;https://www.scss.tcd.ie/~alainm/pdf/slides_PhD_defense_MAlain.ppsx&#34; target=&#34;_blank&#34;&gt;[PPT]&lt;/a&gt;
+&lt;a href=&#34;https://hal.inria.fr/tel-01261590v2&#34; target=&#34;_blank&#34;&gt;[HAL]&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Under the supervision of:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.irisa.fr/temics/staff/guillemot/&#34; target=&#34;_blank&#34;&gt;Christine Guillemot&lt;/a&gt;, Research Director, INRIA Rennes, France&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.technicolor.com/en/dominique-thoreau&#34; target=&#34;_blank&#34;&gt;Dominique Thoreau&lt;/a&gt;, Senior Scientist, Technicolor, France&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.technicolor.com/en/philippe-guillotel&#34; target=&#34;_blank&#34;&gt;Philippe Guilltotel&lt;/a&gt;, Distinguished Scientist, Technicolor, France&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Thesis committee:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Chair:
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://lmorin.perso.insa-rennes.fr&#34; target=&#34;_blank&#34;&gt;Luce Morin&lt;/a&gt;, Professor, INSA Rennes, France&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Reviewers:
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://home.deib.polimi.it/tubaro/bio.html&#34; target=&#34;_blank&#34;&gt;Stefano Tubaro&lt;/a&gt;, Professor, Politecnico di Milano, Italia&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://dufaux.wp.imt.fr/&#34; target=&#34;_blank&#34;&gt;Frédéric Dufaux&lt;/a&gt;, Research Director, Telecom ParisTech, France&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Examinor:
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.lirmm.fr/~wpuech/&#34; target=&#34;_blank&#34;&gt;William Puech&lt;/a&gt;, Professor, LIRMM, France
+&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;related-publications&#34;&gt;Related publications&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.scss.tcd.ie/~alainm/~alainm/publication/locally_linear_embedding_methods_for_inter_image_coding/&#34; target=&#34;_blank&#34;&gt;Locally linear embedding methods for inter image coding&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.scss.tcd.ie/~alainm/~alainm/publication/clustering_based_methods_for_fast_epitome_generation/&#34; target=&#34;_blank&#34;&gt;Clustering-based methods for fast epitome generation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.scss.tcd.ie/~alainm/~alainm/publication/epitome_inpainting_with_in_loop_residue_coding_for_image_compression/&#34; target=&#34;_blank&#34;&gt;Epitome inpainting with in-loop residue coding for image compression&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.scss.tcd.ie/~alainm/~alainm/publication/epitomic_factorization_via_neighbor_embedding/&#34; target=&#34;_blank&#34;&gt;Epitomic image factorization via neighbor-embedding&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.scss.tcd.ie/~alainm/~alainm/publication/inter_prediction_methods_based_on_linear_embedding_for_video_compression/&#34; target=&#34;_blank&#34;&gt;Inter-prediction methods based on linear embedding for video compression&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.scss.tcd.ie/~alainm/~alainm/publication/learning_clustering_based_linear_mappings_for_quantization_noise_removal/&#34; target=&#34;_blank&#34;&gt;Learning clustering-based linear mappings for quantization noise removal&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.scss.tcd.ie/~alainm/~alainm/publication/scalable_image_coding_based_on_epitomes/&#34; target=&#34;_blank&#34;&gt;Scalable image coding based on epitomes&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

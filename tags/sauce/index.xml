@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Sauce on Martin Alain</title>
+    <link>https://www.scss.tcd.ie/~alainm/tags/sauce/</link>
+    <description>Recent content in Sauce on Martin Alain</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2021 Martin Alain</copyright>
+    <lastBuildDate>Tue, 04 Jun 2019 00:00:00 +0000</lastBuildDate>
+    <atom:link href="/~alainm/tags/sauce/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>The Potential of Light Fields in Media Productions</title>
+      <link>https://www.scss.tcd.ie/~alainm/publication/the_potential_of_light_fields_in_media_productions/</link>
+      <pubDate>Tue, 04 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.scss.tcd.ie/~alainm/publication/the_potential_of_light_fields_in_media_productions/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>SAUCE</title>
+      <link>https://www.scss.tcd.ie/~alainm/project/sauce/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.scss.tcd.ie/~alainm/project/sauce/</guid>
+      <description>
+
+&lt;h2 id=&#34;smart-assets-for-re-use-in-creative-environments&#34;&gt;Smart Assets for re-Use in Creative Environments&lt;/h2&gt;
+
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/FB06O5Uzk5Q&#34; title=&#34;YouTube video player&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.sauceproject.eu/&#34; target=&#34;_blank&#34;&gt;SAUCE&lt;/a&gt; was a three-year EU Research and Innovation project between Universitat Pompeu Fabra, Foundry, DNEG, Brno University of Technology, Filmakademie Baden-Württemberg, Saarland University, Trinity College Dublin, Disney Research to create a step-change in allowing creative industry companies to re-use existing digital assets for future productions.&lt;/p&gt;
+
+&lt;p&gt;The goal of SAUCE was to produce, pilot and demonstrate a set of professional tools and techniques that reduce the costs for the production of enhanced digital content for the creative industries by increasing the potential for re-purposing and re-use of content as well as providing significantly improved technologies for digital content production and management.&lt;/p&gt;
+
+&lt;p&gt;The project ran from January 1st 2018 to 31st December 2020.&lt;/p&gt;
+
+&lt;h2 id=&#34;related-publications&#34;&gt;Related publications&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.scss.tcd.ie/~alainm/~alainm/publication/the_potential_of_light_fields_in_media_productions/&#34; target=&#34;_blank&#34;&gt;The Potential of Light Fields in Media Productions&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.scss.tcd.ie/~alainm/~alainm/publication/interactive_light_field_tilt-shift_refocus/&#34; target=&#34;_blank&#34;&gt;Interactive Light Field Tilt-Shift Refocus&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.scss.tcd.ie/~alainm/~alainm/publication/a_spatio-angular_binary_descriptor_for_fast_light_field_inter_view_matching/&#34; target=&#34;_blank&#34;&gt;A Spatio-Angular Binary Descriptor for Fast Light Field Inter View Matching&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.scss.tcd.ie/~alainm/~alainm/publication/a_spatio-angular_filter_for_high_quality_sparse_light_field_refocusing/&#34; target=&#34;_blank&#34;&gt;A Spatio-Angular Filter for High Quality Sparse Light Field Refocusing&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="theme" content="hugo-academic">
+  <meta name="generator" content="Hugo 0.21" />
+  <meta name="author" content="Martin Alain">
+  <meta name="description" content="Postdoctoral Research Fellow">
+
+  
+  
+  
+    
+  
+  
+    
+    
+    <link rel="stylesheet" href="/~alainm/css/highlight.min.css">
+    
+  
+  <link rel="stylesheet" href="/~alainm/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/~alainm/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/~alainm/css/academicons.min.css">
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:400,700%7CMerriweather%7CRoboto+Mono">
+  <link rel="stylesheet" href="/~alainm/css/hugo-academic.css">
+  
+
+  <link rel="alternate" href="https://www.scss.tcd.ie/~alainm/index.xml" type="application/rss+xml" title="Martin Alain">
+  <link rel="feed" href="https://www.scss.tcd.ie/~alainm/index.xml" type="application/rss+xml" title="Martin Alain">
+
+  <link rel="icon" type="image/png" href="/~alainm/img/icon.png">
+  <link rel="apple-touch-icon" type="image/png" href="/~alainm/img/apple-touch-icon.png">
+
+  <link rel="canonical" href="https://www.scss.tcd.ie/~alainm/publication/focus_guided_light_field_saliency_estimation/">
+
+  
+
+  <title>Focus Guided Light Field Saliency Estimation | Martin Alain</title>
+
+</head>
+<body id="top" data-spy="scroll" data-target="#navbar-main" data-offset="71">
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navbar-main">
+  <div class="container">
+
+    
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+              data-target=".navbar-collapse" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/~alainm/">Martin Alain</a>
+    </div>
+
+    
+    <div class="collapse navbar-collapse">
+
+      
+      <ul class="nav navbar-nav navbar-right">
+        
+
+        
+
+        <li class="nav-item">
+          <a href="/~alainm/#about">
+            
+            <span>Home</span>
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        <li class="nav-item">
+          <a href="/~alainm/#publications_selected">
+            
+            <span>Selected publications</span>
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        <li class="nav-item">
+          <a href="/~alainm/#publications">
+            
+            <span>Recent publications</span>
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        <li class="nav-item">
+          <a href="/~alainm/#projects">
+            
+            <span>Projects</span>
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        <li class="nav-item">
+          <a href="/~alainm/#contact">
+            
+            <span>Contact</span>
+          </a>
+        </li>
+
+        
+        
+
+        
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+<div class="pub" itemscope itemtype="http://schema.org/CreativeWork">
+
+  
+<div class="article-header">
+  <img src="/~alainm/img/headers/lfSaliency.png" class="article-banner" itemprop="image">
+  
+</div>
+
+
+
+  <div class="container pub-title">
+    <h1 itemprop="name">Focus Guided Light Field Saliency Estimation</h1>
+    <span class="pub-authors" itemprop="author">
+      
+      A. Gill†, E. Zerman, M. Alain, M. Le Pendu, A. Smolic
+      
+    </span>
+    <span class="pull-right">
+      
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    <li>
+      <a class="facebook"
+         href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fwww.scss.tcd.ie%2f~alainm%2fpublication%2ffocus_guided_light_field_saliency_estimation%2f"
+         target="_blank">
+        <i class="fa fa-facebook"></i>
+      </a>
+    </li>
+    <li>
+      <a class="twitter"
+         href="https://twitter.com/intent/tweet?text=Focus%20Guided%20Light%20Field%20Saliency%20Estimation&amp;url=https%3a%2f%2fwww.scss.tcd.ie%2f~alainm%2fpublication%2ffocus_guided_light_field_saliency_estimation%2f"
+         target="_blank">
+        <i class="fa fa-twitter"></i>
+      </a>
+    </li>
+    <li>
+      <a class="linkedin"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fwww.scss.tcd.ie%2f~alainm%2fpublication%2ffocus_guided_light_field_saliency_estimation%2f&amp;title=Focus%20Guided%20Light%20Field%20Saliency%20Estimation"
+         target="_blank">
+        <i class="fa fa-linkedin"></i>
+      </a>
+    </li>
+    <li>
+      <a class="weibo"
+         href="http://service.weibo.com/share/share.php?url=https%3a%2f%2fwww.scss.tcd.ie%2f~alainm%2fpublication%2ffocus_guided_light_field_saliency_estimation%2f&amp;title=Focus%20Guided%20Light%20Field%20Saliency%20Estimation"
+         target="_blank">
+        <i class="fa fa-weibo"></i>
+      </a>
+    </li>
+    <li>
+      <a class="email"
+         href="mailto:?subject=Focus%20Guided%20Light%20Field%20Saliency%20Estimation&amp;body=https%3a%2f%2fwww.scss.tcd.ie%2f~alainm%2fpublication%2ffocus_guided_light_field_saliency_estimation%2f">
+        <i class="fa fa-envelope"></i>
+      </a>
+    </li>
+  </ul>
+</div>
+
+
+    </span>
+  </div>
+
+</div>
+<div class="article-container">
+
+  
+
+  <h3>Abstract</h3>
+  <p class="pub-abstract" itemprop="text">Light  field  imaging  enables  us  to  capture  all  lightrays   in   a   visual   scene.   As   light   fields   are   four-dimensional,their  captures  come  with  an  increased  amount  of  informationto  take  advantage  of.  This  has  stimulated  ongoing  light  fieldspecific  research  into  virtual  viewpoints  and  shallow  depth  offield  rendering,  commonly  called  refocusing.  However,  the  com-putation time and memory required to perform these operationscan  make  tasks  such  as  real-time  rendering  impractical.  Onesolution  is  to  exploit  the  salient  information  of  light  fields  tofocus  resources  on  regions  that  attract  visual  attention  whenusing  these  algorithms.  Although  saliency  estimation  methodsfor light fields have been previously explored, these focus mainlyon  salient  object  segmentation  with  the  goal  of  generating  onesaliency  map  per  light  field.Aiming  to  create  a  basis  for  a  4D  saliency  prediction  modelanalogous to light fields, this paper proposes a saliency estimationmethod   specific   to   light   fields   that   considers   the   refocusingoperation.   The   proposed   method   modifies   an   existing   viewrendering algorithm with focus guidance, obtained from the lightfield disparity. This facilitates the construction of saliency mapswithout  the  need  to  render  the  corresponding  view  itself,  whichwill help to speed up processing operations that are compatible.The results show that the proposed saliency estimation approachyields  very  good  predictions  of  visual  attention  across  multipleplanes of the light field. We anticipate that this approach can beextended  for  a  range  of  rendering  applications.</p>
+
+  
+  <div class="row">
+    <div class="col-sm-1"></div>
+    <div class="col-sm-10">
+      <div class="row">
+        <div class="col-xs-12 col-sm-3 pub-row-heading">Type</div>
+        <div class="col-xs-12 col-sm-9">
+          
+          <a href="/~alainm/publication/#1">
+            Conference proceedings
+          </a>
+          
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-1"></div>
+  </div>
+  <div class="visible-xs space-below"></div>
+  
+
+  <div class="row">
+    <div class="col-sm-1"></div>
+    <div class="col-sm-10">
+      <div class="row">
+        <div class="col-xs-12 col-sm-3 pub-row-heading">Publication</div>
+        <div class="col-xs-12 col-sm-9">International Conference on Quality of Multimedia Experience</div>
+      </div>
+    </div>
+    <div class="col-sm-1"></div>
+  </div>
+  <div class="visible-xs space-below"></div>
+
+  <div class="row">
+    <div class="col-sm-1"></div>
+    <div class="col-sm-10">
+      <div class="row">
+        <div class="col-xs-12 col-sm-3 pub-row-heading">Date</div>
+        <div class="col-xs-12 col-sm-9" itemprop="datePublished">
+          June, 2021
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-1"></div>
+  </div>
+  <div class="visible-xs space-below"></div>
+
+  <div class="row" style="padding-top: 10px">
+    <div class="col-sm-1"></div>
+    <div class="col-sm-10">
+      <div class="row">
+        <div class="col-xs-12 col-sm-3 pub-row-heading" style="line-height:34px;">Links</div>
+        <div class="col-xs-12 col-sm-9">
+
+          
+
+
+
+
+<a class="btn btn-primary btn-outline" href="https://www.scss.tcd.ie/~alainm/pdf/preprint21_qomex_focusGuidedLFSal.pdf">
+  PDF
+</a>
+
+
+
+
+
+
+
+<a class="btn btn-primary btn-outline" href="http://ieeexplore.ieee.org/document/9465428/">
+  IEEE Xplore
+</a>
+
+<a class="btn btn-primary btn-outline" href="https://v-sense.scss.tcd.ie/research/light-fields/light-field-saliency-estimation/">
+  V-SENSE
+</a>
+
+
+
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-1"></div>
+  </div>
+  <div class="visible-xs space-below"></div>
+
+  <div class="space-below"></div>
+
+  <div class="article-style"><p><h3>Additional Results</h3>
+<p>Due to the page limit of the venue to which we submitted our work, we could not provide all the results in the manuscript.&nbsp;Here we will share additional results for our study.</p>
+<p>The data we used were from 4 different databases: <a href="http://lightfield.stanford.edu/">Stanford</a><sup>1</sup>, <a href="https://mmspg.epfl.ch/EPFL-light-field-image-dataset">EPFL</a><sup>2</sup>, <a href="https://lightfield-analysis.uni-konstanz.de/">HCI Heidelberg<sup>3</sup></a>.</p>
+<table style="text-align: center; width: 100%;" cellspacing="2" cellpadding="2" border="1" align="center">
+<tbody>
+<tr>
+<td>
+<p style="text-align: left;">
+</p></td>
+<td style="text-align: left;">&nbsp;</td>
+<td><img class="alignnone size-full wp-image-6866" src="https://v-sense.scss.tcd.ie/wp-content/uploads/2021/07/label.png" alt="" width="6000" height="365"></td>
+</tr>
+<tr>
+<td>
+<p>Boardgames<sup>3</sup></p>
+</td>
+<td>
+<p>Region1</p>
+</td>
+<td><img class="size-full wp-image-6808 alignnone" src="https://v-sense.scss.tcd.ie/wp-content/uploads/2021/04/boardgames_obj1QomexGrid.png" alt="" width="6125" height="999"></td>
+</tr>
+<tr>
+<td>
+<p>Boardgames<sup>3</sup></p>
+</td>
+<td>
+<p>Region2</p>
+</td>
+<td><img class="alignnone size-full wp-image-6809" src="https://v-sense.scss.tcd.ie/wp-content/uploads/2021/04/boardgames_obj2QomexGrid.png" alt="" width="6125" height="999"></td>
+</tr>
+<tr>
+<td>
+<p>Dino<sup>3</sup></p>
+</td>
+<td>
+<p>Region1</p>
+</td>
+<td><img class="alignnone size-full wp-image-6810" src="https://v-sense.scss.tcd.ie/wp-content/uploads/2021/04/dino_obj1QomexGrid.png" alt="" width="6125" height="999"></td>
+</tr>
+<tr>
+<td>
+<p>Dino<sup>3</sup></p>
+</td>
+<td>
+<p>Region2</p>
+</td>
+<td><img class="alignnone size-full wp-image-6811" src="https://v-sense.scss.tcd.ie/wp-content/uploads/2021/04/dino_obj2QomexGrid.png" alt="" width="6125" height="999"></td>
+</tr>
+<tr>
+<td>
+<p>Dishes<sup>3</sup></p>
+</td>
+<td>
+<p>Region1</p>
+</td>
+<td><img class="alignnone size-full wp-image-6812" src="https://v-sense.scss.tcd.ie/wp-content/uploads/2021/04/dishes_obj1QomexGrid.png" alt="" width="6125" height="999"></td>
+</tr>
+<tr>
+<td>
+<p>Dishes<sup>3</sup></p>
+</td>
+<td>
+<p>Region2</p>
+</td>
+<td><img class="alignnone size-full wp-image-6813" src="https://v-sense.scss.tcd.ie/wp-content/uploads/2021/04/dishes_obj2QomexGrid.png" alt="" width="6125" height="999"></td>
+</tr>
+<tr>
+<td>
+<p>Friends<sup>2</sup></p>
+</td>
+<td>
+<p>Region1</p>
+</td>
+<td><img class="alignnone size-full wp-image-6814" src="https://v-sense.scss.tcd.ie/wp-content/uploads/2021/04/Friends_obj1QomexGrid.png" alt="" width="6125" height="694"></td>
+</tr>
+<tr>
+<td>
+<p>Friends<sup>2</sup></p>
+</td>
+<td>
+<p>Region2</p>
+</td>
+<td><img class="alignnone size-full wp-image-6815" src="https://v-sense.scss.tcd.ie/wp-content/uploads/2021/04/Friends_obj2QomexGrid.png" alt="" width="6125" height="694"></td>
+</tr>
+<tr>
+<td>
+<p>LegoKnights<sup>1</sup></p>
+</td>
+<td>
+<p>Region1</p>
+</td>
+<td><img class="alignnone size-full wp-image-6816" src="https://v-sense.scss.tcd.ie/wp-content/uploads/2021/04/LegoKnights_obj1QomexGrid.png" alt="" width="6125" height="999"></td>
+</tr>
+<tr>
+<td>
+<p>LegoKnights<sup>1</sup></p>
+</td>
+<td>
+<p>Region2</p>
+</td>
+<td><img class="alignnone size-full wp-image-6817" src="https://v-sense.scss.tcd.ie/wp-content/uploads/2021/04/LegoKnights_obj2QomexGrid.png" alt="" width="6125" height="999"></td>
+</tr>
+<tr>
+<td>
+<p>Medieval<sup>3</sup></p>
+</td>
+<td>
+<p>Region1</p>
+</td>
+<td><img class="alignnone size-full wp-image-6818" src="https://v-sense.scss.tcd.ie/wp-content/uploads/2021/04/medieval2_obj1QomexGrid.png" alt="" width="6125" height="999"></td>
+</tr>
+<tr>
+<td>
+<p>Medieval<sup>3</sup></p>
+</td>
+<td>
+<p>Region2</p>
+</td>
+<td><img class="alignnone size-full wp-image-6819" src="https://v-sense.scss.tcd.ie/wp-content/uploads/2021/04/medieval2_obj2QomexGrid.png" alt="" width="6125" height="999"></td>
+</tr>
+<tr>
+<td>
+<p>Pens<sup>3</sup></p>
+</td>
+<td>
+<p>Region1</p>
+</td>
+<td><img class="alignnone size-full wp-image-6820" src="https://v-sense.scss.tcd.ie/wp-content/uploads/2021/04/pens_obj1QomexGrid.png" alt="" width="6125" height="999"></td>
+</tr>
+<tr>
+<td>
+<p>Pens<sup>3</sup></p>
+</td>
+<td>
+<p>Region2</p>
+</td>
+<td><img class="alignnone size-full wp-image-6821" src="https://v-sense.scss.tcd.ie/wp-content/uploads/2021/04/pens_obj2QomexGrid.png" alt="" width="6125" height="999"></td>
+</tr>
+<tr>
+<td>
+<p>Platonic<sup>3</sup></p>
+</td>
+<td>
+<p>Region1</p>
+</td>
+<td><img class="alignnone size-full wp-image-6822" src="https://v-sense.scss.tcd.ie/wp-content/uploads/2021/04/platonic_obj1QomexGrid.png" alt="" width="6125" height="999"></td>
+</tr>
+<tr>
+<td>
+<p>Platonic<sup>3</sup></p>
+</td>
+<td>
+<p>Region2</p>
+</td>
+<td><img class="alignnone size-full wp-image-6823" src="https://v-sense.scss.tcd.ie/wp-content/uploads/2021/04/platonic_obj2QomexGrid.png" alt="" width="6125" height="999"></td>
+</tr>
+<tr>
+<td>
+<p>Sideboard<sup>3</sup></p>
+</td>
+<td>
+<p>Region1</p>
+</td>
+<td><img class="alignnone size-full wp-image-6824" src="https://v-sense.scss.tcd.ie/wp-content/uploads/2021/04/sideboard_obj1QomexGrid.png" alt="" width="6125" height="999"></td>
+</tr>
+<tr>
+<td>
+<p>Sideboard<sup>3</sup></p>
+</td>
+<td>
+<p>Region2</p>
+</td>
+<td><img class="alignnone size-full wp-image-6825" src="https://v-sense.scss.tcd.ie/wp-content/uploads/2021/04/sideboard_obj2QomexGrid.png" alt="" width="6125" height="999"></td>
+</tr>
+<tr>
+<td>
+<p>Table<sup>3</sup></p>
+</td>
+<td>
+<p>Region1</p>
+</td>
+<td><img class="alignnone size-full wp-image-6826" src="https://v-sense.scss.tcd.ie/wp-content/uploads/2021/04/table_obj1QomexGrid.png" alt="" width="6125" height="999"></td>
+</tr>
+<tr>
+<td>
+<p>Table<sup>3</sup></p>
+</td>
+<td>
+<p>Region2</p>
+</td>
+<td><img class="alignnone size-full wp-image-6827" src="https://v-sense.scss.tcd.ie/wp-content/uploads/2021/04/table_obj2QomexGrid.png" alt="" width="6125" height="999"></td>
+</tr>
+<tr>
+<td>
+<p>Tarot-Large<sup>1</sup></p>
+</td>
+<td>
+<p>Region1</p>
+</td>
+<td><img class="alignnone size-full wp-image-6828" src="https://v-sense.scss.tcd.ie/wp-content/uploads/2021/04/TarotCardsandCrystalBall_LargeAngle_obj1QomexGrid.png" alt="" width="6125" height="999"></td>
+</tr>
+<tr>
+<td>
+<p>Tarot-Large<sup>1</sup></p>
+</td>
+<td>
+<p>Region2</p>
+</td>
+<td><img class="alignnone size-full wp-image-6829" src="https://v-sense.scss.tcd.ie/wp-content/uploads/2021/04/TarotCardsandCrystalBall_LargeAngle_obj2QomexGrid.png" alt="" width="6125" height="999"></td>
+</tr>
+<tr>
+<td>
+<p>Tarot-Small<sup>1</sup></p>
+</td>
+<td>
+<p>Region1</p>
+</td>
+<td><img class="alignnone size-full wp-image-6830" src="https://v-sense.scss.tcd.ie/wp-content/uploads/2021/04/TarotCardsandCrystalBall_SmallAngle_obj1QomexGrid.png" alt="" width="6125" height="999"></td>
+</tr>
+<tr>
+<td>
+<p>Tarot-Small<sup>1</sup></p>
+</td>
+<td>
+<p>Region2</p>
+</td>
+<td><img class="alignnone size-full wp-image-6831" src="https://v-sense.scss.tcd.ie/wp-content/uploads/2021/04/TarotCardsandCrystalBall_SmallAngle_obj2QomexGrid.png" alt="" width="6125" height="999"></td>
+</tr>
+<tr>
+<td>
+<p>Tower<sup>3</sup></p>
+</td>
+<td>
+<p>Region1</p>
+</td>
+<td><img class="alignnone size-full wp-image-6832" src="https://v-sense.scss.tcd.ie/wp-content/uploads/2021/04/tower_obj1QomexGrid.png" alt="" width="6125" height="999"></td>
+</tr>
+<tr>
+<td>
+<p>Tower<sup>3</sup></p>
+</td>
+<td>
+<p>Region2</p>
+</td>
+<td><img class="alignnone size-full wp-image-6833" src="https://v-sense.scss.tcd.ie/wp-content/uploads/2021/04/tower_obj2QomexGrid.png" alt="" width="6125" height="999"></td>
+</tr>
+<tr>
+<td>
+<p>Town<sup>3</sup></p>
+</td>
+<td>
+<p>Region1</p>
+</td>
+<td><img class="alignnone size-full wp-image-6834" src="https://v-sense.scss.tcd.ie/wp-content/uploads/2021/04/town_obj1QomexGrid.png" alt="" width="6125" height="999"></td>
+</tr>
+<tr>
+<td>
+<p>Town<sup>3</sup></p>
+</td>
+<td>
+<p>Region2</p>
+</td>
+<td><img class="alignnone size-full wp-image-6835" src="https://v-sense.scss.tcd.ie/wp-content/uploads/2021/04/town_obj2QomexGrid.png" alt="" width="6125" height="999"></td>
+</tr>
+<tr>
+<td>
+<p>Treasure<sup>1</sup></p>
+</td>
+<td>
+<p>Region1</p>
+</td>
+<td><img class="alignnone size-full wp-image-6836" src="https://v-sense.scss.tcd.ie/wp-content/uploads/2021/04/TreasureChest_obj1QomexGrid.png" alt="" width="6125" height="833"></td>
+</tr>
+<tr>
+<td>
+<p>Treasure<sup>1</sup></p>
+</td>
+<td>
+<p>Region2</p>
+</td>
+<td><img class="alignnone size-full wp-image-6837" src="https://v-sense.scss.tcd.ie/wp-content/uploads/2021/04/TreasureChest_obj2QomexGrid.png" alt="" width="6125" height="833"></td>
+</tr>
+<tr>
+<td>
+<p>Vespa<sup>2</sup></p>
+</td>
+<td>
+<p>Region1</p>
+</td>
+<td><img class="alignnone size-full wp-image-6838" src="https://v-sense.scss.tcd.ie/wp-content/uploads/2021/04/Vespa_obj1QomexGrid.png" alt="" width="6125" height="694"></td>
+</tr>
+<tr>
+<td>
+<p>Vespa<sup>2</sup></p>
+</td>
+<td>
+<p>Region2</p>
+</td>
+<td><img class="alignnone size-full wp-image-6839" src="https://v-sense.scss.tcd.ie/wp-content/uploads/2021/04/Vespa_obj2QomexGrid.png" alt="" width="6125" height="694"></td>
+</tr>
+<tr>
+<td>
+<p>Vinyl<sup>3</sup></p>
+</td>
+<td>
+<p>Region1</p>
+</td>
+<td><img class="alignnone size-full wp-image-6840" src="https://v-sense.scss.tcd.ie/wp-content/uploads/2021/04/vinyl_obj1QomexGrid.png" alt="" width="6125" height="999"></td>
+</tr>
+<tr>
+<td style="text-align: left;">
+<p>Vinyl<sup>3</sup></p>
+</td>
+<td>
+<p style="text-align: left;">Region2</p>
+</td>
+<td><img class="alignnone size-full wp-image-6841" src="https://v-sense.scss.tcd.ie/wp-content/uploads/2021/04/vinyl_obj2QomexGrid.png" alt="" width="6125" height="999"></td>
+</tr>
+</tbody>
+</table>
+<p><strong>&nbsp;</strong></p></p>
+</div>
+
+</div>
+
+<div class="container">
+  <nav>
+  <ul class="pager">
+    
+    <li class="previous"><a href="https://www.scss.tcd.ie/~alainm/publication/light_field_style_transfer_with_local_angular_consistency/"><span
+      aria-hidden="true">&larr;</span> Light Field Style Transfer With Local Angular Consistency</a></li>
+    
+
+    
+    <li class="next"><a href="https://www.scss.tcd.ie/~alainm/publication/a_spatio-angular_filter_for_high_quality_sparse_light_field_refocusing/">A spatio-angular filter for high quality sparse light field refocusing <span
+      aria-hidden="true">&rarr;</span></a></li>
+    
+  </ul>
+</nav>
+
+</div>
+
+<footer class="site-footer">
+  <div class="container">
+    <p class="powered-by">
+
+      &copy; 2021 Martin Alain &middot; 
+
+      Powered by the <a href="https://github.com/gcushen/hugo-academic" target="_blank">Academic
+      theme</a> for <a href="http://gohugo.io" target="_blank">Hugo</a>.
+
+      <span class="pull-right" aria-hidden="true">
+        <a href="#" id="back_to_top">
+          <span class="button_icon">
+            <i class="fa fa-chevron-up fa-2x"></i>
+          </span>
+        </a>
+      </span>
+
+    </p>
+  </div>
+</footer>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/gsap/1.18.4/TweenMax.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/ScrollToPlugin.min.js"></script>
+    <script src="/~alainm/js/jquery-1.12.3.min.js"></script>
+    <script src="/~alainm/js/bootstrap.min.js"></script>
+    <script src="/~alainm/js/isotope.pkgd.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.1/imagesloaded.pkgd.min.js"></script>
+    <script src="/~alainm/js/hugo-academic.js"></script>
+    
+
+    
+
+    
+    
+      
+      <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js"></script>
+
+      
+
+      
+
+      <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    
+    
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({ tex2jax: { inlineMath: [['$','$'], ['\\(','\\)']] } });
+    </script>
+    <script async src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML"></script>
+    
+
+  </body>
+</html>
+

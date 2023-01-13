@@ -1,0 +1,1792 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>2 on Martin Alain</title>
+    <link>https://www.scss.tcd.ie/~alainm/publication_types/2/</link>
+    <description>Recent content in 2 on Martin Alain</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2021 Martin Alain</copyright>
+    <lastBuildDate>Thu, 23 Jan 2020 00:00:00 +0000</lastBuildDate>
+    <atom:link href="/~alainm/publication_types/2/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>High Quality Light Field Extraction and Post-Processing for Raw Plenoptic Data</title>
+      <link>https://www.scss.tcd.ie/~alainm/publication/high-quality-light-field-extraction-and-post-processing-for-raw-plenoptic-data/</link>
+      <pubDate>Thu, 23 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.scss.tcd.ie/~alainm/publication/high-quality-light-field-extraction-and-post-processing-for-raw-plenoptic-data/</guid>
+      <description>&lt;p&gt;&lt;h2&gt;Implementation&lt;/h2&gt;
+All of our code is available here (please cite the appropriate papers if you use or adapt these codes in your work):&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/V-Sense/LFToolbox-CLIM_VSENSE&#34;&gt;RAW data decoding&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/V-Sense/LFToolbox_Recolouring_HPR&#34;&gt;Recolouring&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/V-Sense/LFBM5D&#34;&gt;Denoising&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;h2&gt;Datasets&lt;/h2&gt;
+Many of the Light Field datasets we processed are available for direct use in clean form here. Please cite our paper &amp;ldquo;A Pipeline for Lenslet Light Field Quality Enhancement&amp;rdquo;, ICIP 2018, if you use any of these data in you work. Two versions are available, without or with our denoising step:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://v-sense.scss.tcd.ie/Datasets/LFPipeline_datasets.tar.gz&#34;&gt;Dataset (without denoising)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://v-sense.scss.tcd.ie/Datasets/LFPipeline_datasets_denoised.tar.gz&#34;&gt;Dataset (with denoising)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;h2&gt;Additional results&lt;/h2&gt;
+Our pipeline was applied on a subset of the freely available &lt;a href=&#34;https://mmspg.epfl.ch/EPFL-light-field-image-dataset&#34;&gt;EPFL&lt;/a&gt;&lt;sup&gt;1&lt;/sup&gt; and &lt;a href=&#34;https://www.irisa.fr/temics/demos/lightField/CLIM/DataSoftware.html&#34;&gt;INRIA&lt;/a&gt;&lt;sup&gt;2&lt;/sup&gt; datasets.
+&lt;h3&gt;Successful colour correction&lt;/h3&gt;
+&lt;table style=&#34;text-align: center; width: 100%;&#34; cellspacing=&#34;2&#34; cellpadding=&#34;2&#34; border=&#34;1&#34; align=&#34;center&#34;&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align: center; vertical-align: middle;&#34;&gt;Centre view (palette)&lt;/td&gt;
+&lt;td style=&#34;text-align: center; vertical-align: middle;&#34;&gt;Original external view&lt;/td&gt;
+&lt;td style=&#34;text-align: center; vertical-align: middle;&#34;&gt;&amp;lsquo;Centre&amp;rsquo; recolouring&lt;/td&gt;
+&lt;td style=&#34;text-align: center; vertical-align: middle;&#34;&gt;&amp;lsquo;Prop&amp;rsquo; recolouring&lt;/td&gt;
+&lt;td style=&#34;text-align: center; vertical-align: middle;&#34;&gt;&amp;lsquo;Prop+centre&amp;rsquo; reco&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align: left; vertical-align: middle;&#34;&gt;Ankylosaurus&lt;em&gt;and&lt;/em&gt; Diplodocus_1&lt;sup&gt;1&lt;/sup&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align: center; vertical-align: middle;&#34;&gt;&lt;a href=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/anky_ori_0707.png&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;img class=&#34;alignnone size-medium wp-image-1577&#34; src=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/anky_ori_0707-300x208.png&#34; alt=&#34;&#34; width=&#34;300&#34; height=&#34;208&#34;&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align: center; vertical-align: middle;&#34;&gt;&lt;a href=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/anky_ori_0010.png&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;img class=&#34;alignnone size-medium wp-image-1576&#34; src=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/anky_ori_0010-300x208.png&#34; alt=&#34;&#34; width=&#34;300&#34; height=&#34;208&#34;&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align: center; vertical-align: middle;&#34;&gt;&lt;a href=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/anky_c_0010.png&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;img class=&#34;alignnone size-medium wp-image-1575&#34; src=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/anky_c_0010-300x208.png&#34; alt=&#34;&#34; width=&#34;300&#34; height=&#34;208&#34;&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align: center; vertical-align: middle;&#34;&gt;&lt;a href=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/anky_p_0010.png&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;img class=&#34;alignnone size-medium wp-image-1579&#34; src=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/anky_p_0010-300x208.png&#34; alt=&#34;&#34; width=&#34;300&#34; height=&#34;208&#34;&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align: center; vertical-align: middle;&#34;&gt;&lt;a href=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/anky_pc_0010.png&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;img class=&#34;alignnone size-medium wp-image-1578&#34; src=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/anky_pc_0010-300x208.png&#34; alt=&#34;&#34; width=&#34;300&#34; height=&#34;208&#34;&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align: left; vertical-align: middle;&#34;&gt;Bee_1&lt;sup&gt;2&lt;/sup&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align: center; vertical-align: middle;&#34;&gt;&lt;a href=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/bee1_ori_0707.png&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;img class=&#34;alignnone size-thumbnail wp-image-1582&#34; src=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/bee1_ori_0707-300x208.png&#34; alt=&#34;&#34; width=&#34;150&#34; height=&#34;150&#34;&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align: center; vertical-align: middle;&#34;&gt;&lt;a href=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/bee1_ori_0010.png&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;img class=&#34;alignnone size-thumbnail wp-image-1581&#34; src=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/bee1_ori_0010-300x208.png&#34; alt=&#34;&#34; width=&#34;150&#34; height=&#34;150&#34;&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align: center; vertical-align: middle;&#34;&gt;&lt;a href=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/bee1_c_0010.png&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;img class=&#34;alignnone size-thumbnail wp-image-1580&#34; src=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/bee1_c_0010-300x208.png&#34; alt=&#34;&#34; width=&#34;150&#34; height=&#34;150&#34;&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align: center; vertical-align: middle;&#34;&gt;&lt;a href=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/bee1_p_0010.png&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;img class=&#34;alignnone size-thumbnail wp-image-1584&#34; src=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/bee1_p_0010-300x208.png&#34; alt=&#34;&#34; width=&#34;150&#34; height=&#34;150&#34;&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align: center; vertical-align: middle;&#34;&gt;&lt;a href=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/bee1_pc_0010.png&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;img class=&#34;alignnone size-thumbnail wp-image-1583&#34; src=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/bee1_pc_0010-300x208.png&#34; alt=&#34;&#34; width=&#34;150&#34; height=&#34;150&#34;&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align: left; vertical-align: middle;&#34;&gt;Bee_2&lt;sup&gt;2&lt;/sup&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align: center; vertical-align: middle;&#34;&gt;&lt;a href=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/bee2_ori_0707.png&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;img class=&#34;alignnone size-thumbnail wp-image-1706&#34; src=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/bee2_ori_0707-300x208.png&#34; alt=&#34;&#34; width=&#34;150&#34; height=&#34;150&#34;&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align: center; vertical-align: middle;&#34;&gt;&lt;a href=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/bee2_ori_0010.png&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;img class=&#34;alignnone size-thumbnail wp-image-1705&#34; src=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/bee2_ori_0010-300x208.png&#34; alt=&#34;&#34; width=&#34;150&#34; height=&#34;150&#34;&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align: center; vertical-align: middle;&#34;&gt;&lt;a href=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/bee2_c_0010.png&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;img class=&#34;alignnone size-thumbnail wp-image-1704&#34; src=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/bee2_c_0010-300x208.png&#34; alt=&#34;&#34; width=&#34;150&#34; height=&#34;150&#34;&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align: center; vertical-align: middle;&#34;&gt;&lt;a href=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/bee2_p_0010.png&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;img class=&#34;alignnone size-thumbnail wp-image-1708&#34; src=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/bee2_p_0010-300x208.png&#34; alt=&#34;&#34; width=&#34;150&#34; height=&#34;150&#34;&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align: center; vertical-align: middle;&#34;&gt;&lt;a href=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/bee2_pc_0010.png&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;img class=&#34;alignnone size-thumbnail wp-image-1707&#34; src=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/bee2_pc_0010-300x208.png&#34; alt=&#34;&#34; width=&#34;150&#34; height=&#34;150&#34;&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align: left; vertical-align: middle;&#34;&gt;Color_Chart_1&lt;sup&gt;1&lt;/sup&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align: center; vertical-align: middle;&#34;&gt;&lt;a href=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/cchart_ori_0707.png&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;img class=&#34;alignnone size-thumbnail wp-image-1711&#34; src=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/cchart_ori_0707-300x208.png&#34; alt=&#34;&#34; width=&#34;150&#34; height=&#34;150&#34;&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align: center; vertical-align: middle;&#34;&gt;&lt;a href=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/cchart_ori_0010.png&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;img class=&#34;alignnone size-thumbnail wp-image-1710&#34; src=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/cchart_ori_0010-300x208.png&#34; alt=&#34;&#34; width=&#34;150&#34; height=&#34;150&#34;&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align: center; vertical-align: middle;&#34;&gt;&lt;a href=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/cchart_c_0010.png&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;img class=&#34;alignnone size-thumbnail wp-image-1709&#34; src=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/cchart_c_0010-300x208.png&#34; alt=&#34;&#34; width=&#34;150&#34; height=&#34;150&#34;&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align: center; vertical-align: middle;&#34;&gt;&lt;a href=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/cchart_p_0010.png&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;img class=&#34;alignnone size-thumbnail wp-image-1713&#34; src=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/cchart_p_0010-300x208.png&#34; alt=&#34;&#34; width=&#34;150&#34; height=&#34;150&#34;&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align: center; vertical-align: middle;&#34;&gt;&lt;a href=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/cchart_pc_0010.png&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;img class=&#34;alignnone size-thumbnail wp-image-1712&#34; src=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/cchart_pc_0010-300x208.png&#34; alt=&#34;&#34; width=&#34;150&#34; height=&#34;150&#34;&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align: left; vertical-align: middle;&#34;&gt;ChezEdgar&lt;sup&gt;2&lt;/sup&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align: center; vertical-align: middle;&#34;&gt;&lt;a href=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/chezed_ori_0707.png&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;img class=&#34;alignnone size-thumbnail wp-image-1587&#34; src=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/chezed_ori_0707-300x208.png&#34; alt=&#34;&#34; width=&#34;150&#34; height=&#34;150&#34;&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align: center; vertical-align: middle;&#34;&gt;&lt;a href=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/chezed_ori_0010.png&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;img class=&#34;alignnone size-thumbnail wp-image-1586&#34; src=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/chezed_ori_0010-300x208.png&#34; alt=&#34;&#34; width=&#34;150&#34; height=&#34;150&#34;&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align: center; vertical-align: middle;&#34;&gt;&lt;a href=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/chezed_c_0010.png&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;img class=&#34;alignnone size-thumbnail wp-image-1585&#34; src=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/chezed_c_0010-300x208.png&#34; alt=&#34;&#34; width=&#34;150&#34; height=&#34;150&#34;&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align: center; vertical-align: middle;&#34;&gt;&lt;a href=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/chezed_p_0010.png&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;img class=&#34;alignnone size-thumbnail wp-image-1589&#34; src=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/chezed_p_0010-300x208.png&#34; alt=&#34;&#34; width=&#34;150&#34; height=&#34;150&#34;&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align: center; vertical-align: middle;&#34;&gt;&lt;a href=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/chezed_pc_0010.png&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;img class=&#34;alignnone size-thumbnail wp-image-1588&#34; src=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/chezed_pc_0010-300x208.png&#34; alt=&#34;&#34; width=&#34;150&#34; height=&#34;150&#34;&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align: left; vertical-align: middle;&#34;&gt;Friends_1&lt;sup&gt;1&lt;/sup&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align: center; vertical-align: middle;&#34;&gt;&lt;a href=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/friends_ori_0707.png&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;img class=&#34;alignnone size-thumbnail wp-image-1592&#34; src=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/friends_ori_0707-300x208.png&#34; alt=&#34;&#34; width=&#34;150&#34; height=&#34;150&#34;&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align: center; vertical-align: middle;&#34;&gt;&lt;a href=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/friends_ori_0010.png&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;img class=&#34;alignnone size-thumbnail wp-image-1591&#34; src=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/friends_ori_0010-300x208.png&#34; alt=&#34;&#34; width=&#34;150&#34; height=&#34;150&#34;&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align: center; vertical-align: middle;&#34;&gt;&lt;a href=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/friends_c_0010.png&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;img class=&#34;alignnone size-thumbnail wp-image-1590&#34; src=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/friends_c_0010-300x208.png&#34; alt=&#34;&#34; width=&#34;150&#34; height=&#34;150&#34;&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align: center; vertical-align: middle;&#34;&gt;&lt;a href=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/friends_p_0010.png&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;img class=&#34;alignnone size-thumbnail wp-image-1594&#34; src=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/friends_p_0010-300x208.png&#34; alt=&#34;&#34; width=&#34;150&#34; height=&#34;150&#34;&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align: center; vertical-align: middle;&#34;&gt;&lt;a href=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/friends_pc_0010.png&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;img class=&#34;alignnone size-thumbnail wp-image-1593&#34; src=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/friends_pc_0010-300x208.png&#34; alt=&#34;&#34; width=&#34;150&#34; height=&#34;150&#34;&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align: left; vertical-align: middle;&#34;&gt;Fruits&lt;sup&gt;2&lt;/sup&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align: center; vertical-align: middle;&#34;&gt;&lt;a href=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/fruits_ori_0707.png&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;img class=&#34;alignnone size-thumbnail wp-image-1597&#34; src=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/fruits_ori_0707-300x208.png&#34; alt=&#34;&#34; width=&#34;150&#34; height=&#34;150&#34;&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align: center; vertical-align: middle;&#34;&gt;&lt;a href=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/fruits_ori_0010.png&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;img class=&#34;alignnone size-thumbnail wp-image-1596&#34; src=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/fruits_ori_0010-300x208.png&#34; alt=&#34;&#34; width=&#34;150&#34; height=&#34;150&#34;&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align: center; vertical-align: middle;&#34;&gt;&lt;a href=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/fruits_c_0010.png&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;img class=&#34;alignnone size-thumbnail wp-image-1595&#34; src=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/fruits_c_0010-300x208.png&#34; alt=&#34;&#34; width=&#34;150&#34; height=&#34;150&#34;&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align: center; vertical-align: middle;&#34;&gt;&lt;a href=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/fruits_p_0010.png&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;img class=&#34;alignnone size-thumbnail wp-image-1599&#34; src=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/fruits_p_0010-300x208.png&#34; alt=&#34;&#34; width=&#34;150&#34; height=&#34;150&#34;&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align: center; vertical-align: middle;&#34;&gt;&lt;a href=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/fruits_pc_0010.png&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;img class=&#34;alignnone size-thumbnail wp-image-1598&#34; src=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/fruits_pc_0010-300x208.png&#34; alt=&#34;&#34; width=&#34;150&#34; height=&#34;150&#34;&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align: left; vertical-align: middle;&#34;&gt;Magnets_1&lt;sup&gt;1&lt;/sup&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align: center; vertical-align: middle;&#34;&gt;&lt;a href=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/magnets_ori_0707.png&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;img class=&#34;alignnone size-thumbnail wp-image-1602&#34; src=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/magnets_ori_0707-300x208.png&#34; alt=&#34;&#34; width=&#34;150&#34; height=&#34;150&#34;&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align: center; vertical-align: middle;&#34;&gt;&lt;a href=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/magnets_ori_0010.png&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;img class=&#34;alignnone size-thumbnail wp-image-1601&#34; src=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/magnets_ori_0010-300x208.png&#34; alt=&#34;&#34; width=&#34;150&#34; height=&#34;150&#34;&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align: center; vertical-align: middle;&#34;&gt;&lt;a href=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/magnets_c_0010.png&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;img class=&#34;alignnone size-thumbnail wp-image-1600&#34; src=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/magnets_c_0010-300x208.png&#34; alt=&#34;&#34; width=&#34;150&#34; height=&#34;150&#34;&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align: center; vertical-align: middle;&#34;&gt;&lt;a href=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/magnets_p_0010.png&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;img class=&#34;alignnone size-thumbnail wp-image-1604&#34; src=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/magnets_p_0010-300x208.png&#34; alt=&#34;&#34; width=&#34;150&#34; height=&#34;150&#34;&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align: center; vertical-align: middle;&#34;&gt;&lt;a href=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/magnets_pc_0010.png&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;img class=&#34;alignnone size-thumbnail wp-image-1603&#34; src=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/magnets_pc_0010-300x208.png&#34; alt=&#34;&#34; width=&#34;150&#34; height=&#34;150&#34;&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align: left; vertical-align: middle;&#34;&gt;Posts&lt;sup&gt;2&lt;/sup&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align: center; vertical-align: middle;&#34;&gt;&lt;a href=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/posts_ori_0707.png&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;img class=&#34;alignnone size-thumbnail wp-image-1607&#34; src=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/posts_ori_0707-300x208.png&#34; alt=&#34;&#34; width=&#34;150&#34; height=&#34;150&#34;&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align: center; vertical-align: middle;&#34;&gt;&lt;a href=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/posts_ori_0010.png&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;img class=&#34;alignnone size-thumbnail wp-image-1606&#34; src=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/posts_ori_0010-300x208.png&#34; alt=&#34;&#34; width=&#34;150&#34; height=&#34;150&#34;&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align: center; vertical-align: middle;&#34;&gt;&lt;a href=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/posts_c_0010.png&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;img class=&#34;alignnone size-thumbnail wp-image-1605&#34; src=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/posts_c_0010-300x208.png&#34; alt=&#34;&#34; width=&#34;150&#34; height=&#34;150&#34;&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align: center; vertical-align: middle;&#34;&gt;&lt;a href=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/posts_p_0010.png&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;img class=&#34;alignnone size-thumbnail wp-image-1609&#34; src=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/posts_p_0010-300x208.png&#34; alt=&#34;&#34; width=&#34;150&#34; height=&#34;150&#34;&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align: center; vertical-align: middle;&#34;&gt;&lt;a href=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/posts_pc_0010.png&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;img class=&#34;alignnone size-thumbnail wp-image-1608&#34; src=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/posts_pc_0010-300x208.png&#34; alt=&#34;&#34; width=&#34;150&#34; height=&#34;150&#34;&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align: left; vertical-align: middle;&#34;&gt;Rose&lt;sup&gt;2&lt;/sup&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align: center; vertical-align: middle;&#34;&gt;&lt;a href=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/rose_ori_0707.png&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;img class=&#34;alignnone size-thumbnail wp-image-1612&#34; src=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/rose_ori_0707-300x208.png&#34; alt=&#34;&#34; width=&#34;150&#34; height=&#34;150&#34;&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align: center; vertical-align: middle;&#34;&gt;&lt;a href=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/rose_ori_0010.png&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;img class=&#34;alignnone size-thumbnail wp-image-1611&#34; src=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/rose_ori_0010-300x208.png&#34; alt=&#34;&#34; width=&#34;150&#34; height=&#34;150&#34;&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align: center; vertical-align: middle;&#34;&gt;&lt;a href=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/rose_c_0010.png&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;img class=&#34;alignnone size-thumbnail wp-image-1610&#34; src=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/rose_c_0010-300x208.png&#34; alt=&#34;&#34; width=&#34;150&#34; height=&#34;150&#34;&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align: center; vertical-align: middle;&#34;&gt;&lt;a href=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/rose_p_0010.png&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;img class=&#34;alignnone size-thumbnail wp-image-1614&#34; src=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/rose_p_0010-300x208.png&#34; alt=&#34;&#34; width=&#34;150&#34; height=&#34;150&#34;&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align: center; vertical-align: middle;&#34;&gt;&lt;a href=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/rose_pc_0010.png&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;img class=&#34;alignnone size-thumbnail wp-image-1613&#34; src=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/rose_pc_0010-300x208.png&#34; alt=&#34;&#34; width=&#34;150&#34; height=&#34;150&#34;&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align: left; vertical-align: middle;&#34;&gt;Vespa&lt;sup&gt;1&lt;/sup&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align: center; vertical-align: middle;&#34;&gt;&lt;a href=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/vespa_ori_0707.png&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;img class=&#34;alignnone size-thumbnail wp-image-1617&#34; src=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/vespa_ori_0707-300x208.png&#34; alt=&#34;&#34; width=&#34;150&#34; height=&#34;150&#34;&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align: center; vertical-align: middle;&#34;&gt;&lt;a href=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/vespa_ori_0010.png&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;img class=&#34;alignnone size-thumbnail wp-image-1616&#34; src=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/vespa_ori_0010-300x208.png&#34; alt=&#34;&#34; width=&#34;150&#34; height=&#34;150&#34;&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align: center; vertical-align: middle;&#34;&gt;&lt;a href=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/vespa_c_0010.png&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;img class=&#34;alignnone size-thumbnail wp-image-1615&#34; src=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/vespa_c_0010-300x208.png&#34; alt=&#34;&#34; width=&#34;150&#34; height=&#34;150&#34;&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align: center; vertical-align: middle;&#34;&gt;&lt;a href=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/vespa_p_0010.png&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;img class=&#34;alignnone size-thumbnail wp-image-1619&#34; src=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/vespa_p_0010-300x208.png&#34; alt=&#34;&#34; width=&#34;150&#34; height=&#34;150&#34;&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align: center; vertical-align: middle;&#34;&gt;&lt;a href=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/vespa_pc_0010.png&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;img class=&#34;alignnone size-thumbnail wp-image-1618&#34; src=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/vespa_pc_0010-300x208.png&#34; alt=&#34;&#34; width=&#34;150&#34; height=&#34;150&#34;&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3&gt;Video examples&lt;/h3&gt;
+&lt;h4&gt;Left side : our decoding; right side : our recolouring (Bee_2&lt;sup&gt;2&lt;/sup&gt;).&lt;/h4&gt;
+&lt;div class=&#34;vsense-center&#34;&gt;&lt;/p&gt;
+
+&lt;p&gt;[video width=&amp;ldquo;1250&amp;rdquo; height=&amp;ldquo;434&amp;rdquo; mp4=&amp;ldquo;&lt;a href=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/LFcomparisonSideBySide_Bee2.mp4&amp;quot;&#34; target=&#34;_blank&#34;&gt;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/LFcomparisonSideBySide_Bee2.mp4&amp;quot;&lt;/a&gt; loop=&amp;ldquo;true&amp;rdquo;][/video]&lt;/p&gt;
+
+&lt;p&gt;&lt;/div&gt;
+&lt;h4&gt;Left side : our recolouring; right side : our denoising (Bee_2&lt;sup&gt;2&lt;/sup&gt;).&lt;/h4&gt;
+&lt;div class=&#34;vsense-center&#34;&gt;&lt;/p&gt;
+
+&lt;p&gt;[video width=&amp;ldquo;1250&amp;rdquo; height=&amp;ldquo;434&amp;rdquo; mp4=&amp;ldquo;&lt;a href=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/LFcomparisonSideBySide_Bee2_sigma5.mp4&amp;quot;&#34; target=&#34;_blank&#34;&gt;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/LFcomparisonSideBySide_Bee2_sigma5.mp4&amp;quot;&lt;/a&gt; loop=&amp;ldquo;true&amp;rdquo;][/video]&lt;/p&gt;
+
+&lt;p&gt;&lt;/div&gt;
+&lt;h4&gt;Left side : our decoding; right side : our recolouring (Color_Chart_1&lt;sup&gt;1&lt;/sup&gt;).&lt;/h4&gt;
+&lt;div class=&#34;vsense-center&#34;&gt;&lt;/p&gt;
+
+&lt;p&gt;[video width=&amp;ldquo;1250&amp;rdquo; height=&amp;ldquo;434&amp;rdquo; mp4=&amp;ldquo;&lt;a href=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/LFcomparisonSideBySide_ColorChart.mp4&amp;quot;&#34; target=&#34;_blank&#34;&gt;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/LFcomparisonSideBySide_ColorChart.mp4&amp;quot;&lt;/a&gt; loop=&amp;ldquo;true&amp;rdquo;][/video]&lt;/p&gt;
+
+&lt;p&gt;&lt;/div&gt;
+&lt;h4&gt;Left side : our recolouring; right side : our denoising (Color_Chart_1&lt;sup&gt;1&lt;/sup&gt;).&lt;/h4&gt;
+&lt;div class=&#34;vsense-center&#34;&gt;&lt;/p&gt;
+
+&lt;p&gt;[video width=&amp;ldquo;1250&amp;rdquo; height=&amp;ldquo;434&amp;rdquo; mp4=&amp;ldquo;&lt;a href=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/LFcomparisonSideBySide_ColorChart_sigma5.mp4&amp;quot;&#34; target=&#34;_blank&#34;&gt;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/LFcomparisonSideBySide_ColorChart_sigma5.mp4&amp;quot;&lt;/a&gt; loop=&amp;ldquo;true&amp;rdquo;][/video]&lt;/p&gt;
+
+&lt;p&gt;&lt;/div&gt;
+&lt;h3&gt;Epipolar images&lt;/h3&gt;
+&lt;table style=&#34;text-align: center; width: 100%;&#34; cellspacing=&#34;2&#34; cellpadding=&#34;2&#34; border=&#34;1&#34; align=&#34;center&#34;&gt;
+&lt;caption&gt;&lt;b&gt;Horizontal epipolar images.&lt;/b&gt;&lt;/caption&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;Dansereau decoding&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;Our pipeline (&amp;lsquo;centre&amp;rsquo;)&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;Our pipeline (&amp;lsquo;prop&amp;rsquo;)&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;Our pipeline (&amp;lsquo;p+c&amp;rsquo;)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align: left; vertical-align: middle;&#34;&gt;Bee_1&lt;sup&gt;2&lt;/sup&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align: center; vertical-align: middle;&#34;&gt;&lt;a href=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/bee1_4-deno_dans_row.png&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;img class=&#34;alignnone size-thumbnail wp-image-1624&#34; src=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/bee1_4-deno_dans_row-300x100.png&#34; alt=&#34;&#34; width=&#34;150&#34; height=&#34;150&#34;&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align: center; vertical-align: middle;&#34;&gt;&lt;a href=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/bee1_1-deno_c_row.png&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;img class=&#34;alignnone size-thumbnail wp-image-1621&#34; src=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/bee1_1-deno_c_row-300x100.png&#34; alt=&#34;&#34; width=&#34;150&#34; height=&#34;150&#34;&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align: center; vertical-align: middle;&#34;&gt;&lt;a href=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/bee1_2-deno_p_row.png&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;img class=&#34;alignnone size-thumbnail wp-image-1622&#34; src=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/bee1_2-deno_p_row-300x100.png&#34; alt=&#34;&#34; width=&#34;150&#34; height=&#34;150&#34;&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align: center; vertical-align: middle;&#34;&gt;&lt;a href=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/bee1_3-deno_pc_row.png&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;img class=&#34;alignnone size-thumbnail wp-image-1623&#34; src=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/bee1_3-deno_pc_row-300x100.png&#34; alt=&#34;&#34; width=&#34;150&#34; height=&#34;150&#34;&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align: left; vertical-align: middle;&#34;&gt;Bee_2&lt;sup&gt;2&lt;/sup&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align: center; vertical-align: middle;&#34;&gt;&lt;a href=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/bee2_4-deno_dans_row.png&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;img class=&#34;alignnone size-thumbnail wp-image-1628&#34; src=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/bee2_4-deno_dans_row-300x100.png&#34; alt=&#34;&#34; width=&#34;150&#34; height=&#34;150&#34;&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align: center; vertical-align: middle;&#34;&gt;&lt;a href=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/bee2_1-deno_c_row.png&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;img class=&#34;alignnone size-thumbnail wp-image-1625&#34; src=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/bee2_1-deno_c_row-300x100.png&#34; alt=&#34;&#34; width=&#34;150&#34; height=&#34;150&#34;&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align: center; vertical-align: middle;&#34;&gt;&lt;a href=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/bee2_2-deno_p_row.png&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;img class=&#34;alignnone size-thumbnail wp-image-1626&#34; src=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/bee2_2-deno_p_row-300x100.png&#34; alt=&#34;&#34; width=&#34;150&#34; height=&#34;150&#34;&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align: center; vertical-align: middle;&#34;&gt;&lt;a href=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/bee2_3-deno_pc_row.png&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;img class=&#34;alignnone size-thumbnail wp-image-1627&#34; src=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/bee2_3-deno_pc_row-300x100.png&#34; alt=&#34;&#34; width=&#34;150&#34; height=&#34;150&#34;&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align: left; vertical-align: middle;&#34;&gt;Color_Chart_1&lt;sup&gt;1&lt;/sup&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align: center; vertical-align: middle;&#34;&gt;&lt;a href=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/cchart_4-deno_dans_row.png&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;img class=&#34;alignnone size-thumbnail wp-image-1632&#34; src=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/cchart_4-deno_dans_row-300x100.png&#34; alt=&#34;&#34; width=&#34;150&#34; height=&#34;150&#34;&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align: center; vertical-align: middle;&#34;&gt;&lt;a href=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/cchart_1-deno_c_row.png&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;img class=&#34;alignnone size-thumbnail wp-image-1629&#34; src=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/cchart_1-deno_c_row-300x100.png&#34; alt=&#34;&#34; width=&#34;150&#34; height=&#34;150&#34;&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align: center; vertical-align: middle;&#34;&gt;&lt;a href=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/cchart_2-deno_p_row.png&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;img class=&#34;alignnone size-thumbnail wp-image-1630&#34; src=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/cchart_2-deno_p_row-300x100.png&#34; alt=&#34;&#34; width=&#34;150&#34; height=&#34;150&#34;&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align: center; vertical-align: middle;&#34;&gt;&lt;a href=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/cchart_3-deno_pc_row.png&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;img class=&#34;alignnone size-thumbnail wp-image-1631&#34; src=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/cchart_3-deno_pc_row-300x100.png&#34; alt=&#34;&#34; width=&#34;150&#34; height=&#34;150&#34;&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align: left; vertical-align: middle;&#34;&gt;Fruits&lt;sup&gt;2&lt;/sup&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align: center; vertical-align: middle;&#34;&gt;&lt;a href=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/fru_4-deno_dans_row.png&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;img class=&#34;alignnone size-thumbnail wp-image-1636&#34; src=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/fru_4-deno_dans_row-300x100.png&#34; alt=&#34;&#34; width=&#34;150&#34; height=&#34;150&#34;&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align: center; vertical-align: middle;&#34;&gt;&lt;a href=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/fru_1-deno_c_row.png&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;img class=&#34;alignnone size-thumbnail wp-image-1633&#34; src=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/fru_1-deno_c_row-300x100.png&#34; alt=&#34;&#34; width=&#34;150&#34; height=&#34;150&#34;&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align: center; vertical-align: middle;&#34;&gt;&lt;a href=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/fru_2-deno_p_row.png&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;img class=&#34;alignnone size-thumbnail wp-image-1634&#34; src=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/fru_2-deno_p_row-300x100.png&#34; alt=&#34;&#34; width=&#34;150&#34; height=&#34;150&#34;&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align: center; vertical-align: middle;&#34;&gt;&lt;a href=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/fru_3-deno_pc_row.png&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;img class=&#34;alignnone size-thumbnail wp-image-1635&#34; src=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/fru_3-deno_pc_row-300x100.png&#34; alt=&#34;&#34; width=&#34;150&#34; height=&#34;150&#34;&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align: left; vertical-align: middle;&#34;&gt;Magnets_1&lt;sup&gt;1&lt;/sup&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align: center; vertical-align: middle;&#34;&gt;&lt;a href=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/mag_4-deno_dans_row.png&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;img class=&#34;alignnone size-thumbnail wp-image-1640&#34; src=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/mag_4-deno_dans_row-300x100.png&#34; alt=&#34;&#34; width=&#34;150&#34; height=&#34;150&#34;&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align: center; vertical-align: middle;&#34;&gt;&lt;a href=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/mag_1-deno_c_row.png&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;img class=&#34;alignnone size-thumbnail wp-image-1637&#34; src=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/mag_1-deno_c_row-300x100.png&#34; alt=&#34;&#34; width=&#34;150&#34; height=&#34;150&#34;&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align: center; vertical-align: middle;&#34;&gt;&lt;a href=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/mag_2-deno_p_row.png&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;img class=&#34;alignnone size-thumbnail wp-image-1638&#34; src=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/mag_2-deno_p_row-300x100.png&#34; alt=&#34;&#34; width=&#34;150&#34; height=&#34;150&#34;&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align: center; vertical-align: middle;&#34;&gt;&lt;a href=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/mag_3-deno_pc_row.png&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;img class=&#34;alignnone size-thumbnail wp-image-1639&#34; src=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/mag_3-deno_pc_row-300x100.png&#34; alt=&#34;&#34; width=&#34;150&#34; height=&#34;150&#34;&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;table style=&#34;text-align: center; width: 100%;&#34; cellspacing=&#34;2&#34; cellpadding=&#34;2&#34; border=&#34;1&#34; align=&#34;center&#34;&gt;
+&lt;caption&gt;&lt;b&gt;Vertical epipolar images.&lt;/b&gt;&lt;/caption&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align: center; vertical-align: middle;&#34;&gt;Dansereau decoding&lt;/td&gt;
+&lt;td style=&#34;text-align: center; vertical-align: middle;&#34;&gt;Our pipeline (&amp;lsquo;centre&amp;rsquo;)&lt;/td&gt;
+&lt;td style=&#34;text-align: center; vertical-align: middle;&#34;&gt;Our pipeline (&amp;lsquo;prop&amp;rsquo;)&lt;/td&gt;
+&lt;td style=&#34;text-align: center; vertical-align: middle;&#34;&gt;Our pipeline (&amp;lsquo;p+c&amp;rsquo;)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align: left; vertical-align: middle;&#34;&gt;Bee_1&lt;sup&gt;2&lt;/sup&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align: center; vertical-align: middle;&#34;&gt;&lt;a href=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/bee1_4-deno_dans_col.png&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;img class=&#34;alignnone size-thumbnail wp-image-1648&#34; src=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/bee1_4-deno_dans_col-144x300.png&#34; alt=&#34;&#34; width=&#34;150&#34; height=&#34;150&#34;&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align: center; vertical-align: middle;&#34;&gt;&lt;a href=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/bee1_1-deno_c_col.png&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;img class=&#34;alignnone size-thumbnail wp-image-1645&#34; src=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/bee1_1-deno_c_col-144x300.png&#34; alt=&#34;&#34; width=&#34;150&#34; height=&#34;150&#34;&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align: center; vertical-align: middle;&#34;&gt;&lt;a href=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/bee1_2-deno_p_col.png&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;img class=&#34;alignnone size-thumbnail wp-image-1646&#34; src=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/bee1_2-deno_p_col-144x300.png&#34; alt=&#34;&#34; width=&#34;150&#34; height=&#34;150&#34;&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align: center; vertical-align: middle;&#34;&gt;&lt;a href=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/bee1_3-deno_pc_col.png&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;img class=&#34;alignnone size-thumbnail wp-image-1647&#34; src=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/bee1_3-deno_pc_col-144x300.png&#34; alt=&#34;&#34; width=&#34;150&#34; height=&#34;150&#34;&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align: left; vertical-align: middle;&#34;&gt;Bee_2&lt;sup&gt;2&lt;/sup&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align: center; vertical-align: middle;&#34;&gt;&lt;a href=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/bee2_4-deno_dans_col.png&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;img class=&#34;alignnone size-thumbnail wp-image-1652&#34; src=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/bee2_4-deno_dans_col-144x300.png&#34; alt=&#34;&#34; width=&#34;150&#34; height=&#34;150&#34;&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align: center; vertical-align: middle;&#34;&gt;&lt;a href=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/bee2_1-deno_c_col.png&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;img class=&#34;alignnone size-thumbnail wp-image-1649&#34; src=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/bee2_1-deno_c_col-144x300.png&#34; alt=&#34;&#34; width=&#34;150&#34; height=&#34;150&#34;&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align: center; vertical-align: middle;&#34;&gt;&lt;a href=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/bee2_2-deno_p_col.png&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;img class=&#34;alignnone size-thumbnail wp-image-1650&#34; src=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/bee2_2-deno_p_col-144x300.png&#34; alt=&#34;&#34; width=&#34;150&#34; height=&#34;150&#34;&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align: center; vertical-align: middle;&#34;&gt;&lt;a href=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/bee2_3-deno_pc_col.png&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;img class=&#34;alignnone size-thumbnail wp-image-1651&#34; src=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/bee2_3-deno_pc_col-144x300.png&#34; alt=&#34;&#34; width=&#34;150&#34; height=&#34;150&#34;&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align: left; vertical-align: middle;&#34;&gt;Color_Chart_1&lt;sup&gt;1&lt;/sup&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align: center; vertical-align: middle;&#34;&gt;&lt;a href=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/cchart_4-deno_dans_col.png&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;img class=&#34;alignnone size-thumbnail wp-image-1656&#34; src=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/cchart_4-deno_dans_col-144x300.png&#34; alt=&#34;&#34; width=&#34;150&#34; height=&#34;150&#34;&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align: center; vertical-align: middle;&#34;&gt;&lt;a href=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/cchart_1-deno_c_col.png&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;img class=&#34;alignnone size-thumbnail wp-image-1653&#34; src=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/cchart_1-deno_c_col-144x300.png&#34; alt=&#34;&#34; width=&#34;150&#34; height=&#34;150&#34;&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align: center; vertical-align: middle;&#34;&gt;&lt;a href=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/cchart_2-deno_p_col.png&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;img class=&#34;alignnone size-thumbnail wp-image-1654&#34; src=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/cchart_2-deno_p_col-144x300.png&#34; alt=&#34;&#34; width=&#34;150&#34; height=&#34;150&#34;&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align: center; vertical-align: middle;&#34;&gt;&lt;a href=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/cchart_3-deno_pc_col.png&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;img class=&#34;alignnone size-thumbnail wp-image-1655&#34; src=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/cchart_3-deno_pc_col-144x300.png&#34; alt=&#34;&#34; width=&#34;150&#34; height=&#34;150&#34;&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align: left; vertical-align: middle;&#34;&gt;Fruits&lt;sup&gt;2&lt;/sup&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align: center; vertical-align: middle;&#34;&gt;&lt;a href=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/fru_4-deno_dans_col.png&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;img class=&#34;alignnone size-thumbnail wp-image-1668&#34; src=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/fru_4-deno_dans_col-144x300.png&#34; alt=&#34;&#34; width=&#34;150&#34; height=&#34;150&#34;&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align: center; vertical-align: middle;&#34;&gt;&lt;a href=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/fru_1-deno_c_col.png&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;img class=&#34;alignnone size-thumbnail wp-image-1665&#34; src=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/fru_1-deno_c_col-144x300.png&#34; alt=&#34;&#34; width=&#34;150&#34; height=&#34;150&#34;&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align: center; vertical-align: middle;&#34;&gt;&lt;a href=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/fru_2-deno_p_col.png&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;img class=&#34;alignnone size-thumbnail wp-image-1666&#34; src=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/fru_2-deno_p_col-144x300.png&#34; alt=&#34;&#34; width=&#34;150&#34; height=&#34;150&#34;&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align: center; vertical-align: middle;&#34;&gt;&lt;a href=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/fru_3-deno_pc_col.png&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;img class=&#34;alignnone size-thumbnail wp-image-1667&#34; src=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/fru_3-deno_pc_col-144x300.png&#34; alt=&#34;&#34; width=&#34;150&#34; height=&#34;150&#34;&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align: left; vertical-align: middle;&#34;&gt;Magnets_1&lt;sup&gt;1&lt;/sup&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align: center; vertical-align: middle;&#34;&gt;&lt;a href=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/mag_4-deno_dans_col.png&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;img class=&#34;alignnone size-thumbnail wp-image-1672&#34; src=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/mag_4-deno_dans_col-144x300.png&#34; alt=&#34;&#34; width=&#34;150&#34; height=&#34;150&#34;&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align: center; vertical-align: middle;&#34;&gt;&lt;a href=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/mag_1-deno_c_col.png&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;img class=&#34;alignnone size-thumbnail wp-image-1669&#34; src=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/mag_1-deno_c_col-144x300.png&#34; alt=&#34;&#34; width=&#34;150&#34; height=&#34;150&#34;&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align: center; vertical-align: middle;&#34;&gt;&lt;a href=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/mag_2-deno_p_col.png&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;img class=&#34;alignnone size-thumbnail wp-image-1670&#34; src=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/mag_2-deno_p_col-144x300.png&#34; alt=&#34;&#34; width=&#34;150&#34; height=&#34;150&#34;&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align: center; vertical-align: middle;&#34;&gt;&lt;a href=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/mag_3-deno_pc_col.png&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;img class=&#34;alignnone size-thumbnail wp-image-1671&#34; src=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/mag_3-deno_pc_col-144x300.png&#34; alt=&#34;&#34; width=&#34;150&#34; height=&#34;150&#34;&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3&gt;Fail cases&lt;/h3&gt;
+&lt;table style=&#34;text-align: center; width: 100%;&#34; cellspacing=&#34;2&#34; cellpadding=&#34;2&#34; border=&#34;1&#34; align=&#34;center&#34;&gt;
+&lt;caption&gt;&amp;lsquo;Centre&amp;rsquo; recolouring scheme fail cases. First picture is the centre view (palette), the rest are fail cases (different views in the light field). (Color_Chart_1&lt;sup&gt;1&lt;/sup&gt; dataset)&lt;/caption&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align: center; vertical-align: middle;&#34;&gt;&lt;a href=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/goal_0707.png&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;img class=&#34;alignnone size-thumbnail wp-image-1683&#34; src=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/goal_0707-300x208.png&#34; alt=&#34;&#34; width=&#34;150&#34; height=&#34;150&#34;&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align: center; vertical-align: middle;&#34;&gt;&lt;a href=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/fail_reco_1304.png&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;img class=&#34;alignnone size-thumbnail wp-image-1682&#34; src=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/fail_reco_1304-300x208.png&#34; alt=&#34;&#34; width=&#34;150&#34; height=&#34;150&#34;&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align: center; vertical-align: middle;&#34;&gt;&lt;a href=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/fail_reco_1200.png&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;img class=&#34;alignnone size-thumbnail wp-image-1681&#34; src=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/fail_reco_1200-300x208.png&#34; alt=&#34;&#34; width=&#34;150&#34; height=&#34;150&#34;&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align: center; vertical-align: middle;&#34;&gt;&lt;a href=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/fail_reco_1102.png&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;img class=&#34;alignnone size-thumbnail wp-image-1679&#34; src=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/fail_reco_1102-300x208.png&#34; alt=&#34;&#34; width=&#34;150&#34; height=&#34;150&#34;&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align: center; vertical-align: middle;&#34;&gt;&lt;a href=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/fail_reco_1100.png&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;img class=&#34;alignnone size-thumbnail wp-image-1678&#34; src=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/fail_reco_1100-300x208.png&#34; alt=&#34;&#34; width=&#34;150&#34; height=&#34;150&#34;&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align: center; vertical-align: middle;&#34;&gt;&lt;a href=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/fail_reco_1012.png&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;img class=&#34;alignnone size-thumbnail wp-image-1677&#34; src=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/fail_reco_1012-300x208.png&#34; alt=&#34;&#34; width=&#34;150&#34; height=&#34;150&#34;&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;table style=&#34;text-align: center; width: 100%;&#34; cellspacing=&#34;2&#34; cellpadding=&#34;2&#34; border=&#34;1&#34; align=&#34;center&#34;&gt;
+&lt;caption&gt;Examples of tiny details not being registered properly during colour correction. First picture is the centre view (palette), second is a fail case (neighbouring view of the centre one). (Posts&lt;sup&gt;2&lt;/sup&gt; dataset)&lt;/caption&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align: center; vertical-align: middle;&#34;&gt;&lt;a href=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/posts_goal_0707.png&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;img class=&#34;alignnone size-medium wp-image-1812&#34; src=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/posts_goal_0707-300x208.png&#34; alt=&#34;&#34; width=&#34;150&#34; height=&#34;150&#34;&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align: center; vertical-align: middle;&#34;&gt;&lt;a href=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/posts_fail_tiny_0708.png&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;img class=&#34;alignnone size-medium wp-image-1811&#34; src=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/posts_fail_tiny_0708-300x208.png&#34; alt=&#34;&#34; width=&#34;150&#34; height=&#34;150&#34;&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;table style=&#34;text-align: center; width: 100%;&#34; cellspacing=&#34;2&#34; cellpadding=&#34;2&#34; border=&#34;1&#34; align=&#34;center&#34;&gt;
+&lt;caption&gt;Recolouring fail cases when extreme specular effects are present. First picture is the centre view (palette), the rest are fail cases (different views in the light field). (Vespa&lt;sup&gt;1&lt;/sup&gt; dataset)&lt;/caption&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align: center; vertical-align: middle;&#34;&gt;&lt;a href=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/goal_0707-2.png&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;img class=&#34;alignnone size-thumbnail wp-image-1688&#34; src=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/goal_0707-2-300x208.png&#34; alt=&#34;&#34; width=&#34;150&#34; height=&#34;150&#34;&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align: center; vertical-align: middle;&#34;&gt;&lt;a href=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/fail_spec_1112.png&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;img class=&#34;alignnone size-thumbnail wp-image-1687&#34; src=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/fail_spec_1112-300x208.png&#34; alt=&#34;&#34; width=&#34;150&#34; height=&#34;150&#34;&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align: center; vertical-align: middle;&#34;&gt;&lt;a href=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/fail_spec_1012.png&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;img class=&#34;alignnone size-thumbnail wp-image-1686&#34; src=&#34;https://v-sense.scss.tcd.ie/wp-content/uploads/2018/02/fail_spec_1012-300x208.png&#34; alt=&#34;&#34; width=&#34;150&#34; height=&#34;150&#34;&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;!-- &lt;sup&gt;1&lt;/sup&gt; M. Rerabek and T. Ebrahimi, “New Light Field ImageDataset”, inProc. QoMEX, 2016.
+&lt;sup&gt;2&lt;/sup&gt; “Inria Lytro Illum dataset”, http://www.irisa.fr/temics/demos/lightField/CLIM/DataSoftware.html. --&gt;
+&lt;h2&gt;Detailed metric results&lt;/h2&gt;
+&lt;table style=&#34;text-align: center; width: 100%;&#34; cellspacing=&#34;2&#34; cellpadding=&#34;2&#34; border=&#34;1&#34; align=&#34;center&#34;&gt;
+&lt;caption&gt;&lt;b&gt;Table 1 - &lt;/b&gt; Average recolouring results using PSNR. Higher values are better.&lt;/caption&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;Decoded&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;Prop&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;Centre&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;Prop+centre&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align: left;&#34;&gt;Ankylosaurus_and_Diplodocus_1&lt;sup&gt;1&lt;/sup&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;29.2905&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;30.4249&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;30.1865&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;30.3422&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align: left;&#34;&gt;Bee_1&lt;sup&gt;2&lt;/sup&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;22.5770&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;24.0342&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;23.8479&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;23.9856&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align: left;&#34;&gt;Bee_2&lt;sup&gt;2&lt;/sup&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;20.7177&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;21.7383&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;21.5678&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;21.6599&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align: left;&#34;&gt;ChezEdgar&lt;sup&gt;2&lt;/sup&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;25.8484&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;26.7639&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;26.7429&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;26.7728&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align: left;&#34;&gt;Color_Chart_1&lt;sup&gt;1&lt;/sup&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;21.0754&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;21.9253&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;21.6420&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;21.9139&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align: left;&#34;&gt;Friends_1&lt;sup&gt;1&lt;/sup&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;26.9947&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;27.3831&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;27.2762&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;27.3273&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align: left;&#34;&gt;Fruits&lt;sup&gt;2&lt;/sup&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;21.0893&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;21.5367&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;21.4133&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;21.4574&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align: left;&#34;&gt;Magnets_1&lt;sup&gt;1&lt;/sup&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;27.8008&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;28.4443&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;28.3576&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;28.4102&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align: left;&#34;&gt;Posts&lt;sup&gt;2&lt;/sup&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;25.4259&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;29.3566&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;28.8164&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;29.2133&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;table style=&#34;text-align: center; width: 100%;&#34; cellspacing=&#34;2&#34; cellpadding=&#34;2&#34; border=&#34;1&#34; align=&#34;center&#34;&gt;
+&lt;caption&gt;&lt;b&gt;Table 2 - &lt;/b&gt; Average recolouring results using SSIM. Higher values are better.&lt;/caption&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;Decoded&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;Prop&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;Centre&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;Prop+centre&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align: left;&#34;&gt;Ankylosaurus_and_Diplodocus_1&lt;sup&gt;1&lt;/sup&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;0.9049&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;0.9324&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;0.9300&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;0.9317&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align: left;&#34;&gt;Bee_1&lt;sup&gt;2&lt;/sup&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;0.6550&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;0.7212&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;0.7099&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;0.7191&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align: left;&#34;&gt;Bee_2&lt;sup&gt;2&lt;/sup&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;0.5790&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;0.6156&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;0.6101&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;0.6135&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align: left;&#34;&gt;ChezEdgar&lt;sup&gt;2&lt;/sup&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;0.9058&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;0.9152&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;0.9166&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;0.9162&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align: left;&#34;&gt;Color_Chart_1&lt;sup&gt;1&lt;/sup&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;0.8023&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;0.8165&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;0.8057&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;0.8170&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align: left;&#34;&gt;Friends_1&lt;sup&gt;1&lt;/sup&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;0.9239&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;0.9299&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;0.9290&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;0.9297&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align: left;&#34;&gt;Fruits&lt;sup&gt;2&lt;/sup&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;0.6317&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;0.6379&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;0.6369&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;0.6375&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align: left;&#34;&gt;Magnets_1&lt;sup&gt;1&lt;/sup&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;0.9106&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;0.9346&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;0.9330&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;0.9348&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align: left;&#34;&gt;Posts&lt;sup&gt;2&lt;/sup&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;0.8054&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;0.8659&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;0.8560&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;0.8637&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;table style=&#34;text-align: center; width: 100%;&#34; cellspacing=&#34;2&#34; cellpadding=&#34;2&#34; border=&#34;1&#34; align=&#34;center&#34;&gt;
+&lt;caption&gt;&lt;b&gt;Table 3 - &lt;/b&gt; Average recolouring results using S-CIELab. Lower values are better.&lt;/caption&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;Decoded&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;Prop&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;Centre&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;Prop+centre&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align: left;&#34;&gt;Ankylosaurus_and_Diplodocus_1&lt;sup&gt;1&lt;/sup&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;11.6821&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;7.2841&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;7.3169&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;7.2584&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align: left;&#34;&gt;Bee_1&lt;sup&gt;2&lt;/sup&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;47.9358&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;33.7399&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;34.8856&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;33.8488&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align: left;&#34;&gt;Bee_2&lt;sup&gt;2&lt;/sup&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;62.2390&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;58.6591&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;57.2721&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;57.9372&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align: left;&#34;&gt;ChezEdgar&lt;sup&gt;2&lt;/sup&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;29.2363&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;21.7885&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;21.0047&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;21.2967&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align: left;&#34;&gt;Color_Chart_1&lt;sup&gt;1&lt;/sup&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;36.2238&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;24.2762&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;26.1732&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;24.0729&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align: left;&#34;&gt;Friends_1&lt;sup&gt;1&lt;/sup&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;13.5950&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;11.5322&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;11.0613&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;11.2397&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align: left;&#34;&gt;Fruits&lt;sup&gt;2&lt;/sup&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;47.8697&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;46.9557&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;44.3578&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;45.0527&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align: left;&#34;&gt;Magnets_1&lt;sup&gt;1&lt;/sup&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;15.0985&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;11.0375&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;10.7007&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;10.7644&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align: left;&#34;&gt;Posts&lt;sup&gt;2&lt;/sup&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;23.6692&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;9.1165&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;9.9985&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;9.2863&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;table style=&#34;text-align: center; width: 100%;&#34; cellspacing=&#34;2&#34; cellpadding=&#34;2&#34; border=&#34;1&#34; align=&#34;center&#34;&gt;
+&lt;caption&gt;&lt;b&gt;Table 4 - &lt;/b&gt; Average recolouring results using CID. Lower values are better.&lt;/caption&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;Decoded&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;Prop&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;Centre&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;Prop+centre&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align: left;&#34;&gt;Ankylosaurus_and_Diplodocus_1&lt;sup&gt;1&lt;/sup&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;0.4394&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;0.2110&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;0.1993&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;0.2071&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align: left;&#34;&gt;Bee_1&lt;sup&gt;2&lt;/sup&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;0.4277&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;0.2245&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;0.2210&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;0.2223&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align: left;&#34;&gt;Bee_2&lt;sup&gt;2&lt;/sup&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;0.5007&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;0.4455&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;0.4433&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;0.4413&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align: left;&#34;&gt;ChezEdgar&lt;sup&gt;2&lt;/sup&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;0.2260&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;0.2253&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;0.2201&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;0.2210&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align: left;&#34;&gt;Color_Chart_1&lt;sup&gt;1&lt;/sup&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;0.4059&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;0.3869&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;0.3966&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;0.3876&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align: left;&#34;&gt;Friends_1&lt;sup&gt;1&lt;/sup&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;0.1266&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;0.1141&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;0.1128&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;0.1130&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align: left;&#34;&gt;Fruits&lt;sup&gt;2&lt;/sup&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;0.3110&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;0.3049&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;0.3004&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;0.3007&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align: left;&#34;&gt;Magnets_1&lt;sup&gt;1&lt;/sup&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;0.5034&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;0.3056&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;0.3113&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;0.3112&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align: left;&#34;&gt;Posts&lt;sup&gt;2&lt;/sup&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;0.0222&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;0.0216&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;0.0244&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;0.0228&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;table style=&#34;text-align: center; width: 100%;&#34; cellspacing=&#34;2&#34; cellpadding=&#34;2&#34; border=&#34;1&#34; align=&#34;center&#34;&gt;
+&lt;caption&gt;&lt;b&gt;Table 5 - &lt;/b&gt; Average recolouring results using Histogram distance. Lower values are better.&lt;/caption&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;Decoded&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;Prop&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;Centre&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;Prop+centre&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align: left;&#34;&gt;Ankylosaurus_and_Diplodocus_1&lt;sup&gt;1&lt;/sup&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;0.3068&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;0.1583&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;0.1591&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;0.1597&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align: left;&#34;&gt;Bee_1&lt;sup&gt;2&lt;/sup&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;0.3419&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;0.2037&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;0.2153&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;0.2045&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align: left;&#34;&gt;Bee_2&lt;sup&gt;2&lt;/sup&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;0.2354&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;0.2238&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;0.1841&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;0.2039&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align: left;&#34;&gt;ChezEdgar&lt;sup&gt;2&lt;/sup&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;0.2189&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;0.1225&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;0.1234&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;0.1234&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align: left;&#34;&gt;Color_Chart_1&lt;sup&gt;1&lt;/sup&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;0.2274&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;0.1540&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;0.1588&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;0.1536&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align: left;&#34;&gt;Friends_1&lt;sup&gt;1&lt;/sup&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;0.1928&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;0.1185&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;0.1170&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;0.1179&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align: left;&#34;&gt;Fruits&lt;sup&gt;2&lt;/sup&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;0.1930&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;0.1669&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;0.1375&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;0.1482&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align: left;&#34;&gt;Magnets_1&lt;sup&gt;1&lt;/sup&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;0.2768&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;0.1545&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;0.1424&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;0.1497&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align: left;&#34;&gt;Posts&lt;sup&gt;2&lt;/sup&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;0.4981&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;0.2388&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;0.2384&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;0.2437&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;table style=&#34;text-align: center; width: 100%;&#34; cellspacing=&#34;2&#34; cellpadding=&#34;2&#34; border=&#34;1&#34; align=&#34;center&#34;&gt;
+&lt;caption&gt;&lt;b&gt;Table 6 - &lt;/b&gt; Average noise level before and after denoising. Lower values are better.&lt;/caption&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;Decoded&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;Prop&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;Prop+denoising&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;Centre&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;Centre+denoising&lt;/td&gt;
+&lt;td style=&#34;text-align: center;&#34;&gt;Prop+centre+denoising&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align: left;&#34;&gt;Ankylosaurus_and_Diplodocus_1&lt;sup&gt;1&lt;/sup&gt;&lt;/td&gt;
+&lt;td&gt;1.268&lt;/td&gt;
+&lt;td&gt;0.830&lt;/td&gt;
+&lt;td&gt;0.010&lt;/td&gt;
+&lt;td&gt;0.847&lt;/td&gt;
+&lt;td&gt;0.013&lt;/td&gt;
+&lt;td&gt;0.816&lt;/td&gt;
+&lt;td&gt;0.009&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align: left;&#34;&gt;Bee_1&lt;sup&gt;2&lt;/sup&gt;&lt;/td&gt;
+&lt;td&gt;3.019&lt;/td&gt;
+&lt;td&gt;2.132&lt;/td&gt;
+&lt;td&gt;0.262&lt;/td&gt;
+&lt;td&gt;2.362&lt;/td&gt;
+&lt;td&gt;0.345&lt;/td&gt;
+&lt;td&gt;2.160&lt;/td&gt;
+&lt;td&gt;0.262&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align: left;&#34;&gt;Bee_2&lt;sup&gt;2&lt;/sup&gt;&lt;/td&gt;
+&lt;td&gt;1.994&lt;/td&gt;
+&lt;td&gt;1.704&lt;/td&gt;
+&lt;td&gt;0.197&lt;/td&gt;
+&lt;td&gt;1.971&lt;/td&gt;
+&lt;td&gt;0.214&lt;/td&gt;
+&lt;td&gt;1.775&lt;/td&gt;
+&lt;td&gt;0.196&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align: left;&#34;&gt;ChezEdgar&lt;sup&gt;2&lt;/sup&gt;&lt;/td&gt;
+&lt;td&gt;1.532&lt;/td&gt;
+&lt;td&gt;1.365&lt;/td&gt;
+&lt;td&gt;0.252&lt;/td&gt;
+&lt;td&gt;1.415&lt;/td&gt;
+&lt;td&gt;0.259&lt;/td&gt;
+&lt;td&gt;1.372&lt;/td&gt;
+&lt;td&gt;0.253&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align: left;&#34;&gt;Color_Chart_1&lt;sup&gt;1&lt;/sup&gt;&lt;/td&gt;
+&lt;td&gt;1.294&lt;/td&gt;
+&lt;td&gt;1.239&lt;/td&gt;
+&lt;td&gt;0.090&lt;/td&gt;
+&lt;td&gt;1.386&lt;/td&gt;
+&lt;td&gt;0.130&lt;/td&gt;
+&lt;td&gt;1.248&lt;/td&gt;
+&lt;td&gt;0.090&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align: left;&#34;&gt;Friends_1&lt;sup&gt;1&lt;/sup&gt;&lt;/td&gt;
+&lt;td&gt;0.584&lt;/td&gt;
+&lt;td&gt;0.563&lt;/td&gt;
+&lt;td&gt;0.110&lt;/td&gt;
+&lt;td&gt;0.570&lt;/td&gt;
+&lt;td&gt;0.105&lt;/td&gt;
+&lt;td&gt;0.586&lt;/td&gt;
+&lt;td&gt;0.113&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align: left;&#34;&gt;Fruits&lt;sup&gt;2&lt;/sup&gt;&lt;/td&gt;
+&lt;td&gt;1.293&lt;/td&gt;
+&lt;td&gt;1.220&lt;/td&gt;
+&lt;td&gt;0.159&lt;/td&gt;
+&lt;td&gt;1.383&lt;/td&gt;
+&lt;td&gt;0.168&lt;/td&gt;
+&lt;td&gt;1.321&lt;/td&gt;
+&lt;td&gt;0.164&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align: left;&#34;&gt;Magnets_1&lt;sup&gt;1&lt;/sup&gt;&lt;/td&gt;
+&lt;td&gt;1.196&lt;/td&gt;
+&lt;td&gt;0.812&lt;/td&gt;
+&lt;td&gt;0.008&lt;/td&gt;
+&lt;td&gt;0.890&lt;/td&gt;
+&lt;td&gt;0.021&lt;/td&gt;
+&lt;td&gt;0.825&lt;/td&gt;
+&lt;td&gt;0.011&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align: left;&#34;&gt;Posts&lt;sup&gt;2&lt;/sup&gt;&lt;/td&gt;
+&lt;td&gt;1.622&lt;/td&gt;
+&lt;td&gt;0.956&lt;/td&gt;
+&lt;td&gt;0.008&lt;/td&gt;
+&lt;td&gt;1.092&lt;/td&gt;
+&lt;td&gt;0.022&lt;/td&gt;
+&lt;td&gt;0.956&lt;/td&gt;
+&lt;td&gt;0.008&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2&gt;References&lt;/h2&gt;
+[1] M. Rerabek and T. Ebrahimi, “New Light Field Image Dataset”, in Proc. QoMEX, 2016.
+[2] “Inria lytro illum dataset”, &lt;a href=&#34;http://www.irisa.fr/temics/demos/lightField/CLIM/DataSoftware.html&#34; target=&#34;_blank&#34;&gt;http://www.irisa.fr/temics/demos/lightField/CLIM/DataSoftware.html&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Scalable image coding based on epitomes</title>
+      <link>https://www.scss.tcd.ie/~alainm/publication/scalable_image_coding_based_on_epitomes/</link>
+      <pubDate>Tue, 09 May 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.scss.tcd.ie/~alainm/publication/scalable_image_coding_based_on_epitomes/</guid>
+      <description>
+
+&lt;h2 id=&#34;context-and-goal&#34;&gt;Context and Goal&lt;/h2&gt;
+
+&lt;p&gt;The concept of epitome was first introduced by Jojic et al. as the condensed representation (meaning its size is only a fraction of the original size) of an image containing the essence of its the textural properties. This original epitomic model is based on a patch-based probabilistic approach, and has different applications in segmentation, denoising, recognition, indexing or texture synthesis.&lt;br /&gt;
+Several epitomic models have been since proposed, such as the factorized representation of Wang et al. dedicated to texture mapping, or its extension designed for image coding purposes by Chérigui et al. The epitome is in this case the union of epitome charts which are pieces of repeatable textures found in the image. The search for self-similar or repeatable texture patterns, based on the KLT or a block matching (BM) algorithm, is known to be memory and time consuming.&lt;br /&gt;
+In this work, we propose a clustering-based technique to reduce the self-similarities search complexity.&lt;/p&gt;
+
+&lt;h2 id=&#34;approach&#34;&gt;Approach&lt;/h2&gt;
+
+&lt;p&gt;The main steps of the proposed scheme for scalable image coding are depicted in Fig. 1.&lt;/p&gt;
+
+&lt;p&gt;In the proposed scheme, the enhancement layer (EL) consists in an epitome of the input image. Consequently, at the decoder side, the EL patches not contained in the epitome are missing, but the corresponding base layer (BL) patches are known. We thus propose to restore the full enhancement layer by taking advantage of the known representative texture patches available in the EL epitome charts. (More explanations on the epitome generation are available [here]() or in the papers listed &lt;a href=&#34;#references&#34;&gt;at the end of this page.&lt;/a&gt;)&lt;/p&gt;
+
+&lt;p&gt;The epitomes are encoded with a scalable scheme as an enhancement layer. The blocks not belonging to the epitome are directly copied from the decoded base layer, thus their rate-cost is practically non-existent.&lt;/p&gt;
+
+&lt;p&gt;The non-epitome part of the enhancement layer is restored using methods derived from local learning-based super-resolution methods, and can be summarized in the three following steps: K-NN search, learning step, and processing step. These steps are shown in Fig. 2. A first method is proposed relying on Locally Linear Embedding, noted E-LLE. A second technique called E-LLM, based on Local Linear Mapping, is also studied.&lt;/p&gt;
+
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;https://www.scss.tcd.ie/~alainm/img/eptmSc_files/schema.png&#34; alt=&#34;Proposed scheme for scalable image coding.&#34; /&gt;
+    
+    
+    &lt;figcaption&gt;
+        &lt;p&gt;
+        Proposed scheme for scalable image coding.
+        
+            
+        
+        &lt;/p&gt; 
+    &lt;/figcaption&gt;
+    
+&lt;/figure&gt;
+
+
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;https://www.scss.tcd.ie/~alainm/img/eptmSc_files/schema_restoration.png&#34; alt=&#34;Main steps of the epitome-based restoration.&#34; /&gt;
+    
+    
+    &lt;figcaption&gt;
+        &lt;p&gt;
+        Main steps of the epitome-based restoration.
+        
+            
+        
+        &lt;/p&gt; 
+    &lt;/figcaption&gt;
+    
+&lt;/figure&gt;
+
+
+&lt;h2 id=&#34;experimental-results&#34;&gt;Experimental Results&lt;/h2&gt;
+
+&lt;p&gt;The experiments are performed on the test images listed in Table I, obtained from the HEVC test sequences. The base layer images are obtained by down sampling the input image with a factor 2x2, using the SHVC down-sampling filter available with the SHM software (ver. 9.0). The BL images are encoded with HEVC, using the HM software (ver. 15.0). We then use the SHM software (ver. 9.0) to encode the corresponding enhancement layers. Both layers are encoded with the following quantization steps: QP = 22, 27, 32, 37.&lt;/p&gt;
+
+&lt;p&gt;For each input image, 3 to 4 epitomes of different sizes are genererated, ranging from 30% to 90% of the input image sizes.&lt;/p&gt;
+
+&lt;table style=&#34;text-align: center; width: 60%;&#34; border=&#34;1&#34; cellpadding=&#34;2&#34; cellspacing=&#34;2&#34; align=&#34;center&#34;&gt;&lt;caption&gt;Table 1 - Test images&lt;/caption&gt;
+
+&lt;tbody&gt;
+
+&lt;tr&gt;
+
+&lt;th&gt;Class&lt;/th&gt;
+
+&lt;th&gt;Image&lt;/th&gt;
+
+&lt;th&gt;Size&lt;/th&gt;
+
+&lt;/tr&gt;
+
+&lt;tr&gt;
+
+&lt;td&gt;B&lt;/td&gt;
+
+&lt;td&gt;BasketballDrive&lt;/td&gt;
+
+&lt;td&gt;1920x1080&lt;/td&gt;
+
+&lt;/tr&gt;
+
+&lt;tr&gt;
+
+&lt;td&gt;B&lt;/td&gt;
+
+&lt;td&gt;Cactus&lt;/td&gt;
+
+&lt;td&gt;1920x1080&lt;/td&gt;
+
+&lt;/tr&gt;
+
+&lt;tr&gt;
+
+&lt;td&gt;B&lt;/td&gt;
+
+&lt;td&gt;Ducks&lt;/td&gt;
+
+&lt;td&gt;1920x1080&lt;/td&gt;
+
+&lt;/tr&gt;
+
+&lt;tr&gt;
+
+&lt;td&gt;B&lt;/td&gt;
+
+&lt;td&gt;Kimono&lt;/td&gt;
+
+&lt;td&gt;1920x1080&lt;/td&gt;
+
+&lt;/tr&gt;
+
+&lt;tr&gt;
+
+&lt;td&gt;B&lt;/td&gt;
+
+&lt;td&gt;ParkScene&lt;/td&gt;
+
+&lt;td&gt;1920x1080&lt;/td&gt;
+
+&lt;/tr&gt;
+
+&lt;tr&gt;
+
+&lt;td&gt;B&lt;/td&gt;
+
+&lt;td&gt;Tennis&lt;/td&gt;
+
+&lt;td&gt;1920x1080&lt;/td&gt;
+
+&lt;/tr&gt;
+
+&lt;tr&gt;
+
+&lt;td&gt;B&lt;/td&gt;
+
+&lt;td&gt;Terrace&lt;/td&gt;
+
+&lt;td&gt;1920x1080&lt;/td&gt;
+
+&lt;/tr&gt;
+
+&lt;tr&gt;
+
+&lt;td&gt;C&lt;/td&gt;
+
+&lt;td&gt;BasketballDrill&lt;/td&gt;
+
+&lt;td&gt;832x480&lt;/td&gt;
+
+&lt;/tr&gt;
+
+&lt;tr&gt;
+
+&lt;td&gt;C&lt;/td&gt;
+
+&lt;td&gt;Keiba&lt;/td&gt;
+
+&lt;td&gt;832x480&lt;/td&gt;
+
+&lt;/tr&gt;
+
+&lt;tr&gt;
+
+&lt;td&gt;C&lt;/td&gt;
+
+&lt;td&gt;Mall&lt;/td&gt;
+
+&lt;td&gt;832x480&lt;/td&gt;
+
+&lt;/tr&gt;
+
+&lt;tr&gt;
+
+&lt;td&gt;C&lt;/td&gt;
+
+&lt;td&gt;PartyScene&lt;/td&gt;
+
+&lt;td&gt;832x480&lt;/td&gt;
+
+&lt;/tr&gt;
+
+&lt;tr&gt;
+
+&lt;td&gt;D&lt;/td&gt;
+
+&lt;td&gt;BasketballPass&lt;/td&gt;
+
+&lt;td&gt;416x240&lt;/td&gt;
+
+&lt;/tr&gt;
+
+&lt;tr&gt;
+
+&lt;td&gt;D&lt;/td&gt;
+
+&lt;td&gt;BlowingBubbles&lt;/td&gt;
+
+&lt;td&gt;416x240&lt;/td&gt;
+
+&lt;/tr&gt;
+
+&lt;tr&gt;
+
+&lt;td&gt;D&lt;/td&gt;
+
+&lt;td&gt;RaceHorses&lt;/td&gt;
+
+&lt;td&gt;416x240&lt;/td&gt;
+
+&lt;/tr&gt;
+
+&lt;tr&gt;
+
+&lt;td&gt;D&lt;/td&gt;
+
+&lt;td&gt;Square&lt;/td&gt;
+
+&lt;td&gt;416x240&lt;/td&gt;
+
+&lt;/tr&gt;
+
+&lt;tr&gt;
+
+&lt;td&gt;E&lt;/td&gt;
+
+&lt;td&gt;City&lt;/td&gt;
+
+&lt;td&gt;1280x720&lt;/td&gt;
+
+&lt;/tr&gt;
+
+&lt;/tbody&gt;
+
+&lt;/table&gt;
+
+&lt;p&gt;We show in Fig. 3 the Bjontegaard rate gains averaged over all sequences depending on the epitome size. The complete results are given in Table 2. We show in Fig. 4 the RD curve of the City image, which behavior is representative of the set of test images. We first show (left) the RD curve for both E-LLE and E-LLM methods with the biggest epitome size (best RD performances). We then show (right) the RD curve for the E-LLE with different epitome sizes.&lt;/p&gt;
+
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;https://www.scss.tcd.ie/~alainm/img/eptmSc_files/RD_perf_size_eptm.png&#34; alt=&#34;Average RD performances of the different restoration methods against SHVC depending on the epitome size.&#34; /&gt;
+    
+    
+    &lt;figcaption&gt;
+        &lt;p&gt;
+        Average RD performances of the different restoration methods against SHVC depending on the epitome size.
+        
+            
+        
+        &lt;/p&gt; 
+    &lt;/figcaption&gt;
+    
+&lt;/figure&gt;
+
+
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;https://www.scss.tcd.ie/~alainm/img/eptmSc_files/City_RD_curve_method_and_eptm_size.png&#34; alt=&#34;Left: E-LLE and E-LLM methods, epitome size = 91.59% of input image. Right: E-LLE method, with different epitome sizes.&#34; /&gt;
+    
+    
+    &lt;figcaption&gt;
+        &lt;p&gt;
+        Left: E-LLE and E-LLM methods, epitome size = 91.59% of input image. Right: E-LLE method, with different epitome sizes.
+        
+            
+        
+        &lt;/p&gt; 
+    &lt;/figcaption&gt;
+    
+&lt;/figure&gt;
+
+
+&lt;p&gt;We show in Fig. 5 the running time of the different methods for each image class (&lt;em&gt;i.e.&lt;/em&gt; size) depending on the epitome size. On the left, we show the running time of the epitome generation at the encoder side. On the right, we show the running time of the restoration step at the decoder side. Note that the epitome generation algorithm was implemented in C++ while the restoration methods were implemented in Matlab.&lt;/p&gt;
+
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;https://www.scss.tcd.ie/~alainm/img/eptmSc_files/running_time_eptm_post_proc.png&#34; alt=&#34;Left: Epitome generation running time depending on the epitome size for different image classes. Right: Post-processing running time of the different restoration methods depending on the epitome size for different image classes.&#34; /&gt;
+    
+    
+    &lt;figcaption&gt;
+        &lt;p&gt;
+        Left: Epitome generation running time depending on the epitome size for different image classes. Right: Post-processing running time of the different restoration methods depending on the epitome size for different image classes.
+        
+            
+        
+        &lt;/p&gt; 
+    &lt;/figcaption&gt;
+    
+&lt;/figure&gt;
+
+
+&lt;p&gt;In the table below are listed the exhaustive Bjontegaard rate gains obtained with the proposed methods against SHVC.&lt;/p&gt;
+
+&lt;table style=&#34;text-align: center; width: 100%;&#34; border=&#34;1&#34; cellpadding=&#34;2&#34; cellspacing=&#34;2&#34; align=&#34;center&#34;&gt;&lt;caption&gt;Table 2 -  Bjontegaard rate gains SHVC depending on the epitome size.&lt;/caption&gt;
+
+&lt;tbody&gt;
+
+&lt;tr&gt;
+
+&lt;td rowspan=&#34;2&#34;&gt;Image&lt;/td&gt;
+
+&lt;td rowspan=&#34;2&#34;&gt;Epitome size (% of input image)&lt;/td&gt;
+
+&lt;td colspan=&#34;2&#34;&gt;BD rate gains (%)&lt;/td&gt;
+
+&lt;/tr&gt;
+
+&lt;tr&gt;
+
+&lt;td&gt;E-LLE&lt;/td&gt;
+
+&lt;td&gt;E-LLM&lt;/td&gt;
+
+&lt;/tr&gt;
+
+&lt;tr&gt;
+
+&lt;td rowspan=&#34;4&#34;&gt;BasketballDrive&lt;/td&gt;
+
+&lt;td&gt;90.62&lt;/td&gt;
+
+&lt;td&gt;-20.07&lt;/td&gt;
+
+&lt;td&gt;-19.61&lt;/td&gt;
+
+&lt;/tr&gt;
+
+&lt;tr&gt;
+
+&lt;td&gt;64.10&lt;/td&gt;
+
+&lt;td&gt;-15.94&lt;/td&gt;
+
+&lt;td&gt;-13.70&lt;/td&gt;
+
+&lt;/tr&gt;
+
+&lt;tr&gt;
+
+&lt;td&gt;49.33&lt;/td&gt;
+
+&lt;td&gt;-13.66&lt;/td&gt;
+
+&lt;td&gt;-8.89&lt;/td&gt;
+
+&lt;/tr&gt;
+
+&lt;tr&gt;
+
+&lt;td&gt;32.34&lt;/td&gt;
+
+&lt;td&gt;-9.70&lt;/td&gt;
+
+&lt;td&gt;-0.08&lt;/td&gt;
+
+&lt;/tr&gt;
+
+&lt;tr&gt;
+
+&lt;td rowspan=&#34;4&#34;&gt;Cactus&lt;/td&gt;
+
+&lt;td&gt;79.85&lt;/td&gt;
+
+&lt;td&gt;-18.19&lt;/td&gt;
+
+&lt;td&gt;-16.46&lt;/td&gt;
+
+&lt;/tr&gt;
+
+&lt;tr&gt;
+
+&lt;td&gt;71.24&lt;/td&gt;
+
+&lt;td&gt;-17.67&lt;/td&gt;
+
+&lt;td&gt;-15.14&lt;/td&gt;
+
+&lt;/tr&gt;
+
+&lt;tr&gt;
+
+&lt;td&gt;60.66&lt;/td&gt;
+
+&lt;td&gt;-16.33&lt;/td&gt;
+
+&lt;td&gt;-13.01&lt;/td&gt;
+
+&lt;/tr&gt;
+
+&lt;tr&gt;
+
+&lt;td&gt;48.33&lt;/td&gt;
+
+&lt;td&gt;-11.63&lt;/td&gt;
+
+&lt;td&gt;-7.42&lt;/td&gt;
+
+&lt;/tr&gt;
+
+&lt;tr&gt;
+
+&lt;td rowspan=&#34;3&#34;&gt;Ducks&lt;/td&gt;
+
+&lt;td&gt;89.63&lt;/td&gt;
+
+&lt;td&gt;-19.52&lt;/td&gt;
+
+&lt;td&gt;-19.07&lt;/td&gt;
+
+&lt;/tr&gt;
+
+&lt;tr&gt;
+
+&lt;td&gt;77.41&lt;/td&gt;
+
+&lt;td&gt;-16.71&lt;/td&gt;
+
+&lt;td&gt;-14.21&lt;/td&gt;
+
+&lt;/tr&gt;
+
+&lt;tr&gt;
+
+&lt;td&gt;48.28&lt;/td&gt;
+
+&lt;td&gt;2.88&lt;/td&gt;
+
+&lt;td&gt;10.28&lt;/td&gt;
+
+&lt;/tr&gt;
+
+&lt;tr&gt;
+
+&lt;td rowspan=&#34;4&#34;&gt;Kimono&lt;/td&gt;
+
+&lt;td&gt;90.13&lt;/td&gt;
+
+&lt;td&gt;-21.75&lt;/td&gt;
+
+&lt;td&gt;-21.42&lt;/td&gt;
+
+&lt;/tr&gt;
+
+&lt;tr&gt;
+
+&lt;td&gt;75.53&lt;/td&gt;
+
+&lt;td&gt;-15.98&lt;/td&gt;
+
+&lt;td&gt;-12.63&lt;/td&gt;
+
+&lt;/tr&gt;
+
+&lt;tr&gt;
+
+&lt;td&gt;59.36&lt;/td&gt;
+
+&lt;td&gt;-17.37&lt;/td&gt;
+
+&lt;td&gt;-15.08&lt;/td&gt;
+
+&lt;/tr&gt;
+
+&lt;tr&gt;
+
+&lt;td&gt;35.34&lt;/td&gt;
+
+&lt;td&gt;-15.82&lt;/td&gt;
+
+&lt;td&gt;-12.31&lt;/td&gt;
+
+&lt;/tr&gt;
+
+&lt;tr&gt;
+
+&lt;td rowspan=&#34;4&#34;&gt;ParkScene&lt;/td&gt;
+
+&lt;td&gt;86.58&lt;/td&gt;
+
+&lt;td&gt;-16.88&lt;/td&gt;
+
+&lt;td&gt;-16.45&lt;/td&gt;
+
+&lt;/tr&gt;
+
+&lt;tr&gt;
+
+&lt;td&gt;73.55&lt;/td&gt;
+
+&lt;td&gt;-15.10&lt;/td&gt;
+
+&lt;td&gt;-13.84&lt;/td&gt;
+
+&lt;/tr&gt;
+
+&lt;tr&gt;
+
+&lt;td&gt;61.99&lt;/td&gt;
+
+&lt;td&gt;-10.69&lt;/td&gt;
+
+&lt;td&gt;-7.50&lt;/td&gt;
+
+&lt;/tr&gt;
+
+&lt;tr&gt;
+
+&lt;td&gt;47.18&lt;/td&gt;
+
+&lt;td&gt;-3.94&lt;/td&gt;
+
+&lt;td&gt;2.89&lt;/td&gt;
+
+&lt;/tr&gt;
+
+&lt;tr&gt;
+
+&lt;td rowspan=&#34;4&#34;&gt;Tennis&lt;/td&gt;
+
+&lt;td&gt;64.49&lt;/td&gt;
+
+&lt;td&gt;-23.04&lt;/td&gt;
+
+&lt;td&gt;-21.91&lt;/td&gt;
+
+&lt;/tr&gt;
+
+&lt;tr&gt;
+
+&lt;td&gt;50.44&lt;/td&gt;
+
+&lt;td&gt;-22.03&lt;/td&gt;
+
+&lt;td&gt;-19.61&lt;/td&gt;
+
+&lt;/tr&gt;
+
+&lt;tr&gt;
+
+&lt;td&gt;43.12&lt;/td&gt;
+
+&lt;td&gt;-19.90&lt;/td&gt;
+
+&lt;td&gt;-16.59&lt;/td&gt;
+
+&lt;/tr&gt;
+
+&lt;tr&gt;
+
+&lt;td&gt;32.22&lt;/td&gt;
+
+&lt;td&gt;-18.42&lt;/td&gt;
+
+&lt;td&gt;-13.13&lt;/td&gt;
+
+&lt;/tr&gt;
+
+&lt;tr&gt;
+
+&lt;td rowspan=&#34;4&#34;&gt;Terrace&lt;/td&gt;
+
+&lt;td&gt;78.46&lt;/td&gt;
+
+&lt;td&gt;-13.27&lt;/td&gt;
+
+&lt;td&gt;-12.49&lt;/td&gt;
+
+&lt;/tr&gt;
+
+&lt;tr&gt;
+
+&lt;td&gt;66.39&lt;/td&gt;
+
+&lt;td&gt;-11.32&lt;/td&gt;
+
+&lt;td&gt;-9.57&lt;/td&gt;
+
+&lt;/tr&gt;
+
+&lt;tr&gt;
+
+&lt;td&gt;53.31&lt;/td&gt;
+
+&lt;td&gt;-6.81&lt;/td&gt;
+
+&lt;td&gt;-3.01&lt;/td&gt;
+
+&lt;/tr&gt;
+
+&lt;tr&gt;
+
+&lt;td&gt;43.50&lt;/td&gt;
+
+&lt;td&gt;-0.50&lt;/td&gt;
+
+&lt;td&gt;9.03&lt;/td&gt;
+
+&lt;/tr&gt;
+
+&lt;tr&gt;
+
+&lt;td rowspan=&#34;4&#34;&gt;City&lt;/td&gt;
+
+&lt;td&gt;91.59&lt;/td&gt;
+
+&lt;td&gt;-10.05&lt;/td&gt;
+
+&lt;td&gt;-8.76&lt;/td&gt;
+
+&lt;/tr&gt;
+
+&lt;tr&gt;
+
+&lt;td&gt;82.44&lt;/td&gt;
+
+&lt;td&gt;-6.24&lt;/td&gt;
+
+&lt;td&gt;-1.59&lt;/td&gt;
+
+&lt;/tr&gt;
+
+&lt;tr&gt;
+
+&lt;td&gt;66.81&lt;/td&gt;
+
+&lt;td&gt;3.27&lt;/td&gt;
+
+&lt;td&gt;17.75&lt;/td&gt;
+
+&lt;/tr&gt;
+
+&lt;tr&gt;
+
+&lt;td&gt;39.52&lt;/td&gt;
+
+&lt;td&gt;28.00&lt;/td&gt;
+
+&lt;td&gt;59.96&lt;/td&gt;
+
+&lt;/tr&gt;
+
+&lt;tr&gt;
+
+&lt;td rowspan=&#34;4&#34;&gt;BasketballDrill&lt;/td&gt;
+
+&lt;td&gt;87.05&lt;/td&gt;
+
+&lt;td&gt;-6.52&lt;/td&gt;
+
+&lt;td&gt;-5.50&lt;/td&gt;
+
+&lt;/tr&gt;
+
+&lt;tr&gt;
+
+&lt;td&gt;59.94&lt;/td&gt;
+
+&lt;td&gt;-2.82&lt;/td&gt;
+
+&lt;td&gt;1.08&lt;/td&gt;
+
+&lt;/tr&gt;
+
+&lt;tr&gt;
+
+&lt;td&gt;42.63&lt;/td&gt;
+
+&lt;td&gt;-1.62&lt;/td&gt;
+
+&lt;td&gt;4.44&lt;/td&gt;
+
+&lt;/tr&gt;
+
+&lt;tr&gt;
+
+&lt;td&gt;28.53&lt;/td&gt;
+
+&lt;td&gt;3.18&lt;/td&gt;
+
+&lt;td&gt;13.08&lt;/td&gt;
+
+&lt;/tr&gt;
+
+&lt;tr&gt;
+
+&lt;td rowspan=&#34;4&#34;&gt;Keiba&lt;/td&gt;
+
+&lt;td&gt;93.59&lt;/td&gt;
+
+&lt;td&gt;-6.71&lt;/td&gt;
+
+&lt;td&gt;-6.42&lt;/td&gt;
+
+&lt;/tr&gt;
+
+&lt;tr&gt;
+
+&lt;td&gt;81.28&lt;/td&gt;
+
+&lt;td&gt;-3.69&lt;/td&gt;
+
+&lt;td&gt;-1.99&lt;/td&gt;
+
+&lt;/tr&gt;
+
+&lt;tr&gt;
+
+&lt;td&gt;63.53&lt;/td&gt;
+
+&lt;td&gt;3.24&lt;/td&gt;
+
+&lt;td&gt;7.75&lt;/td&gt;
+
+&lt;/tr&gt;
+
+&lt;tr&gt;
+
+&lt;td&gt;40.77&lt;/td&gt;
+
+&lt;td&gt;16.06&lt;/td&gt;
+
+&lt;td&gt;23.52&lt;/td&gt;
+
+&lt;/tr&gt;
+
+&lt;tr&gt;
+
+&lt;td rowspan=&#34;4&#34;&gt;Mall&lt;/td&gt;
+
+&lt;td&gt;92.95&lt;/td&gt;
+
+&lt;td&gt;-18.20&lt;/td&gt;
+
+&lt;td&gt;-16.76&lt;/td&gt;
+
+&lt;/tr&gt;
+
+&lt;tr&gt;
+
+&lt;td&gt;76.28&lt;/td&gt;
+
+&lt;td&gt;-0.50&lt;/td&gt;
+
+&lt;td&gt;-2.13&lt;/td&gt;
+
+&lt;/tr&gt;
+
+&lt;tr&gt;
+
+&lt;td&gt;66.15&lt;/td&gt;
+
+&lt;td&gt;-4.13&lt;/td&gt;
+
+&lt;td&gt;3.04&lt;/td&gt;
+
+&lt;/tr&gt;
+
+&lt;tr&gt;
+
+&lt;td&gt;50.26&lt;/td&gt;
+
+&lt;td&gt;6.75&lt;/td&gt;
+
+&lt;td&gt;27.54&lt;/td&gt;
+
+&lt;/tr&gt;
+
+&lt;tr&gt;
+
+&lt;td rowspan=&#34;4&#34;&gt;PartyScene&lt;/td&gt;
+
+&lt;td&gt;94.82&lt;/td&gt;
+
+&lt;td&gt;-5.44&lt;/td&gt;
+
+&lt;td&gt;-4.29&lt;/td&gt;
+
+&lt;/tr&gt;
+
+&lt;tr&gt;
+
+&lt;td&gt;81.12&lt;/td&gt;
+
+&lt;td&gt;-1.18&lt;/td&gt;
+
+&lt;td&gt;7.20&lt;/td&gt;
+
+&lt;/tr&gt;
+
+&lt;tr&gt;
+
+&lt;td&gt;67.56&lt;/td&gt;
+
+&lt;td&gt;8.83&lt;/td&gt;
+
+&lt;td&gt;25.96&lt;/td&gt;
+
+&lt;/tr&gt;
+
+&lt;tr&gt;
+
+&lt;td&gt;49.13&lt;/td&gt;
+
+&lt;td&gt;26.89&lt;/td&gt;
+
+&lt;td&gt;57.15&lt;/td&gt;
+
+&lt;/tr&gt;
+
+&lt;tr&gt;
+
+&lt;td rowspan=&#34;4&#34;&gt;BasketballPass&lt;/td&gt;
+
+&lt;td&gt;77.76&lt;/td&gt;
+
+&lt;td&gt;-16.17&lt;/td&gt;
+
+&lt;td&gt;-13.15&lt;/td&gt;
+
+&lt;/tr&gt;
+
+&lt;tr&gt;
+
+&lt;td&gt;66.60&lt;/td&gt;
+
+&lt;td&gt;-14.07&lt;/td&gt;
+
+&lt;td&gt;-7.25&lt;/td&gt;
+
+&lt;/tr&gt;
+
+&lt;tr&gt;
+
+&lt;td&gt;56.41&lt;/td&gt;
+
+&lt;td&gt;-0.53&lt;/td&gt;
+
+&lt;td&gt;10.48&lt;/td&gt;
+
+&lt;/tr&gt;
+
+&lt;tr&gt;
+
+&lt;td&gt;42.31&lt;/td&gt;
+
+&lt;td&gt;5.72&lt;/td&gt;
+
+&lt;td&gt;28.21&lt;/td&gt;
+
+&lt;/tr&gt;
+
+&lt;tr&gt;
+
+&lt;td rowspan=&#34;4&#34;&gt;BlowingBubbles&lt;/td&gt;
+
+&lt;td&gt;87.56&lt;/td&gt;
+
+&lt;td&gt;-6.33&lt;/td&gt;
+
+&lt;td&gt;-3.29&lt;/td&gt;
+
+&lt;/tr&gt;
+
+&lt;tr&gt;
+
+&lt;td&gt;73.33&lt;/td&gt;
+
+&lt;td&gt;-2.73&lt;/td&gt;
+
+&lt;td&gt;3.65&lt;/td&gt;
+
+&lt;/tr&gt;
+
+&lt;tr&gt;
+
+&lt;td&gt;58.85&lt;/td&gt;
+
+&lt;td&gt;3.27&lt;/td&gt;
+
+&lt;td&gt;13.95&lt;/td&gt;
+
+&lt;/tr&gt;
+
+&lt;tr&gt;
+
+&lt;td&gt;36.92&lt;/td&gt;
+
+&lt;td&gt;16.81&lt;/td&gt;
+
+&lt;td&gt;44.03&lt;/td&gt;
+
+&lt;/tr&gt;
+
+&lt;tr&gt;
+
+&lt;td rowspan=&#34;4&#34;&gt;RaceHorses&lt;/td&gt;
+
+&lt;td&gt;91.03&lt;/td&gt;
+
+&lt;td&gt;-16.08&lt;/td&gt;
+
+&lt;td&gt;-15.67&lt;/td&gt;
+
+&lt;/tr&gt;
+
+&lt;tr&gt;
+
+&lt;td&gt;79.23&lt;/td&gt;
+
+&lt;td&gt;-4.49&lt;/td&gt;
+
+&lt;td&gt;-3.03&lt;/td&gt;
+
+&lt;/tr&gt;
+
+&lt;tr&gt;
+
+&lt;td&gt;58.14&lt;/td&gt;
+
+&lt;td&gt;6.69&lt;/td&gt;
+
+&lt;td&gt;20.64&lt;/td&gt;
+
+&lt;/tr&gt;
+
+&lt;tr&gt;
+
+&lt;td&gt;36.67&lt;/td&gt;
+
+&lt;td&gt;23.45&lt;/td&gt;
+
+&lt;td&gt;63.23&lt;/td&gt;
+
+&lt;/tr&gt;
+
+&lt;tr&gt;
+
+&lt;td rowspan=&#34;4&#34;&gt;Square&lt;/td&gt;
+
+&lt;td&gt;80.77&lt;/td&gt;
+
+&lt;td&gt;-6.45&lt;/td&gt;
+
+&lt;td&gt;-2.97&lt;/td&gt;
+
+&lt;/tr&gt;
+
+&lt;tr&gt;
+
+&lt;td&gt;71.41&lt;/td&gt;
+
+&lt;td&gt;-5.88&lt;/td&gt;
+
+&lt;td&gt;1.08&lt;/td&gt;
+
+&lt;/tr&gt;
+
+&lt;tr&gt;
+
+&lt;td&gt;61.09&lt;/td&gt;
+
+&lt;td&gt;-2.00&lt;/td&gt;
+
+&lt;td&gt;4.75&lt;/td&gt;
+
+&lt;/tr&gt;
+
+&lt;tr&gt;
+
+&lt;td&gt;48.72&lt;/td&gt;
+
+&lt;td&gt;9.80&lt;/td&gt;
+
+&lt;td&gt;31.68&lt;/td&gt;
+
+&lt;/tr&gt;
+
+&lt;/tbody&gt;
+
+&lt;/table&gt;
+
+&lt;h2 id=&#34;references&#34;&gt;References&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Nebojsa Jojic, Brendan J. Frey, Anitha Kannan, &lt;strong&gt;Epitomic analysis of appearance and shape&lt;/strong&gt;, &lt;em&gt;ICCV 2003.&lt;/em&gt; &lt;a href=&#34;http://research.microsoft.com/en-us/um/people/jojic/epitome/JojicFreyKannan_iccv03.pdf&#34; target=&#34;_blank&#34;&gt;[PDF]&lt;/a&gt; &lt;a href=&#34;http://research.microsoft.com/en-us/um/people/jojic/epitome.htm&#34; target=&#34;_blank&#34;&gt;[Web]&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Huamin Wang, Yonatan Wexler, Eyal Ofek, Hugues Hoppe, &lt;strong&gt;Factoring repeated content within and among images&lt;/strong&gt;, &lt;em&gt;SIGGRAPH 2008.&lt;/em&gt; &lt;a href=&#34;http://research.microsoft.com/en-us/um/people/hoppe/factorimage.pdf&#34; target=&#34;_blank&#34;&gt;[PDF]&lt;/a&gt; &lt;a href=&#34;http://research.microsoft.com/en-us/um/people/hoppe/proj/factorimage&#34; target=&#34;_blank&#34;&gt;[Web]&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Safa Cherigui, &lt;a href=&#34;http://www.irisa.fr/temics/staff/guillemot/&#34; target=&#34;_blank&#34;&gt;Christine Guillemot&lt;/a&gt;, &lt;a href=&#34;http://www.technicolor.com/en/dominique-thoreau&#34; target=&#34;_blank&#34;&gt;Dominique Thoreau&lt;/a&gt;, &lt;a href=&#34;http://www.technicolor.com/en/philippe-guillotel&#34; target=&#34;_blank&#34;&gt;Philippe Guilltotel&lt;/a&gt; and &lt;a href=&#34;http://www.technicolor.com/en/patrick-perez&#34; target=&#34;_blank&#34;&gt;Patrick Perez&lt;/a&gt;, &lt;strong&gt;Epitome-based image compression using translational sub-pel mapping&lt;/strong&gt;, &lt;em&gt;MMSP 2011.&lt;/em&gt; &lt;a href=&#34;https://hal.inria.fr/hal-00994418/document&#34; target=&#34;_blank&#34;&gt;[PDF]&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Inter-prediction methods based on linear embedding for video compression</title>
+      <link>https://www.scss.tcd.ie/~alainm/publication/inter_prediction_methods_based_on_linear_embedding_for_video_compression/</link>
+      <pubDate>Tue, 01 Sep 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.scss.tcd.ie/~alainm/publication/inter_prediction_methods_based_on_linear_embedding_for_video_compression/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

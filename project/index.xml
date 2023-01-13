@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Projects on Martin Alain</title>
+    <link>https://www.scss.tcd.ie/~alainm/project/</link>
+    <description>Recent content in Projects on Martin Alain</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2021 Martin Alain</copyright>
+    <lastBuildDate>Wed, 27 Apr 2016 00:00:00 +0000</lastBuildDate>
+    <atom:link href="/~alainm/project/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>PhD Thesis</title>
+      <link>https://www.scss.tcd.ie/~alainm/project/phd/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.scss.tcd.ie/~alainm/project/phd/</guid>
+      <description>
+
+&lt;p&gt;&amp;ldquo;A compact video representation format based on spatio-temporal linear embedding and epitome&amp;rdquo;&lt;/p&gt;
+
+&lt;p&gt;Defended on the 12th of January 2016.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.scss.tcd.ie/~alainm/pdf/these_Martin_Alain.pdf&#34; target=&#34;_blank&#34;&gt;[PDF]&lt;/a&gt;
+&lt;a href=&#34;https://www.scss.tcd.ie/~alainm/pdf/slides_PhD_defense_MAlain.ppsx&#34; target=&#34;_blank&#34;&gt;[PPT]&lt;/a&gt;
+&lt;a href=&#34;https://hal.inria.fr/tel-01261590v2&#34; target=&#34;_blank&#34;&gt;[HAL]&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Under the supervision of:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.irisa.fr/temics/staff/guillemot/&#34; target=&#34;_blank&#34;&gt;Christine Guillemot&lt;/a&gt;, Research Director, INRIA Rennes, France&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.technicolor.com/en/dominique-thoreau&#34; target=&#34;_blank&#34;&gt;Dominique Thoreau&lt;/a&gt;, Senior Scientist, Technicolor, France&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.technicolor.com/en/philippe-guillotel&#34; target=&#34;_blank&#34;&gt;Philippe Guilltotel&lt;/a&gt;, Distinguished Scientist, Technicolor, France&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Thesis committee:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Chair:
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://lmorin.perso.insa-rennes.fr&#34; target=&#34;_blank&#34;&gt;Luce Morin&lt;/a&gt;, Professor, INSA Rennes, France&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Reviewers:
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://home.deib.polimi.it/tubaro/bio.html&#34; target=&#34;_blank&#34;&gt;Stefano Tubaro&lt;/a&gt;, Professor, Politecnico di Milano, Italia&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://dufaux.wp.imt.fr/&#34; target=&#34;_blank&#34;&gt;Frédéric Dufaux&lt;/a&gt;, Research Director, Telecom ParisTech, France&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Examinor:
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.lirmm.fr/~wpuech/&#34; target=&#34;_blank&#34;&gt;William Puech&lt;/a&gt;, Professor, LIRMM, France
+&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;related-publications&#34;&gt;Related publications&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.scss.tcd.ie/~alainm/~alainm/publication/locally_linear_embedding_methods_for_inter_image_coding/&#34; target=&#34;_blank&#34;&gt;Locally linear embedding methods for inter image coding&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.scss.tcd.ie/~alainm/~alainm/publication/clustering_based_methods_for_fast_epitome_generation/&#34; target=&#34;_blank&#34;&gt;Clustering-based methods for fast epitome generation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.scss.tcd.ie/~alainm/~alainm/publication/epitome_inpainting_with_in_loop_residue_coding_for_image_compression/&#34; target=&#34;_blank&#34;&gt;Epitome inpainting with in-loop residue coding for image compression&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.scss.tcd.ie/~alainm/~alainm/publication/epitomic_factorization_via_neighbor_embedding/&#34; target=&#34;_blank&#34;&gt;Epitomic image factorization via neighbor-embedding&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.scss.tcd.ie/~alainm/~alainm/publication/inter_prediction_methods_based_on_linear_embedding_for_video_compression/&#34; target=&#34;_blank&#34;&gt;Inter-prediction methods based on linear embedding for video compression&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.scss.tcd.ie/~alainm/~alainm/publication/learning_clustering_based_linear_mappings_for_quantization_noise_removal/&#34; target=&#34;_blank&#34;&gt;Learning clustering-based linear mappings for quantization noise removal&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.scss.tcd.ie/~alainm/~alainm/publication/scalable_image_coding_based_on_epitomes/&#34; target=&#34;_blank&#34;&gt;Scalable image coding based on epitomes&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>SAUCE</title>
+      <link>https://www.scss.tcd.ie/~alainm/project/sauce/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.scss.tcd.ie/~alainm/project/sauce/</guid>
+      <description>
+
+&lt;h2 id=&#34;smart-assets-for-re-use-in-creative-environments&#34;&gt;Smart Assets for re-Use in Creative Environments&lt;/h2&gt;
+
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/FB06O5Uzk5Q&#34; title=&#34;YouTube video player&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.sauceproject.eu/&#34; target=&#34;_blank&#34;&gt;SAUCE&lt;/a&gt; was a three-year EU Research and Innovation project between Universitat Pompeu Fabra, Foundry, DNEG, Brno University of Technology, Filmakademie Baden-Württemberg, Saarland University, Trinity College Dublin, Disney Research to create a step-change in allowing creative industry companies to re-use existing digital assets for future productions.&lt;/p&gt;
+
+&lt;p&gt;The goal of SAUCE was to produce, pilot and demonstrate a set of professional tools and techniques that reduce the costs for the production of enhanced digital content for the creative industries by increasing the potential for re-purposing and re-use of content as well as providing significantly improved technologies for digital content production and management.&lt;/p&gt;
+
+&lt;p&gt;The project ran from January 1st 2018 to 31st December 2020.&lt;/p&gt;
+
+&lt;h2 id=&#34;related-publications&#34;&gt;Related publications&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.scss.tcd.ie/~alainm/~alainm/publication/the_potential_of_light_fields_in_media_productions/&#34; target=&#34;_blank&#34;&gt;The Potential of Light Fields in Media Productions&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.scss.tcd.ie/~alainm/~alainm/publication/interactive_light_field_tilt-shift_refocus/&#34; target=&#34;_blank&#34;&gt;Interactive Light Field Tilt-Shift Refocus&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.scss.tcd.ie/~alainm/~alainm/publication/a_spatio-angular_binary_descriptor_for_fast_light_field_inter_view_matching/&#34; target=&#34;_blank&#34;&gt;A Spatio-Angular Binary Descriptor for Fast Light Field Inter View Matching&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.scss.tcd.ie/~alainm/~alainm/publication/a_spatio-angular_filter_for_high_quality_sparse_light_field_refocusing/&#34; target=&#34;_blank&#34;&gt;A Spatio-Angular Filter for High Quality Sparse Light Field Refocusing&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>V-SENSE</title>
+      <link>https://www.scss.tcd.ie/~alainm/project/v-sense/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.scss.tcd.ie/~alainm/project/v-sense/</guid>
+      <description>
+
+&lt;h2 id=&#34;extending-visual-sensation-through-image-based-visual-computing&#34;&gt;Extending Visual Sensation through Image-Based Visual Computing&lt;/h2&gt;
+
+&lt;p&gt;Since September 2016, I am a research fellow in the &lt;a href=&#34;https://v-sense.scss.tcd.ie/&#34; target=&#34;_blank&#34;&gt;V-SENSE project&lt;/a&gt;, lead by Professor &lt;a href=&#34;https://www.scss.tcd.ie/Aljosa.Smolic/&#34; target=&#34;_blank&#34;&gt;Aljosa Smolic&lt;/a&gt;.
+V-SENSE is a team of 20+ researchers (half postdocs half PhDs) in Visual Computing at the intersection of Computer Vision, Computer Graphics and Media Signal Processing.
+My research is focused on light field imaging technologies, investigating novel methods for light field denoising, scene reconstruction from light field, and light field rendering.&lt;/p&gt;
+
+&lt;h2 id=&#34;light-fields-imaging-technologies&#34;&gt;Light fields imaging technologies&lt;/h2&gt;
+
+&lt;p&gt;Light fields capture all light rays passing through a given volume of space.
+Compared to traditional 2D imaging systems which capture the spatial intensity of the light rays, the 4D light fields also contain the angular direction of light rays.
+This additional information allows for multiple applications in different research areas such as image processing, computer vision, and computer graphics, including (but not limited to) the reconstruction of the 3D geometry of a scene, creating new images from virtual point of view, or changing the focus of an image after it is captured.
+Light fields are also a growing topic of interest in the VR/AR community.&lt;/p&gt;
+
+&lt;p&gt;Below is an example of a light field captured with a Lytro Illum camera, which allows for refocusing and changing the perspective.&lt;/p&gt;
+
+&lt;iframe width=&#39;809&#39; height=&#39;540&#39; src=&#39;https://www.scss.tcd.ie/~alainm/vid/Lytro_example.mp4&#39; frameborder=&#39;0&#39; allowfullscreen scrolling=&#39;no&#39;&gt;&lt;/iframe&gt;
+
+&lt;h2 id=&#34;related-publications&#34;&gt;Related publications&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.scss.tcd.ie/~alainm/~alainm/publication/fast-and-accurate-optical-flow-based-depth-map-estimation-from-light-fields/&#34; target=&#34;_blank&#34;&gt;Fast and Accurate Optical Flow based Depth Map Estimation from Light Fields&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.scss.tcd.ie/~alainm/~alainm/publication/light_field_denoising_by_sparse_5d_transform_domain_collaborative_filtering/&#34; target=&#34;_blank&#34;&gt;Light Field Denoising by Sparse 5D Transform Domain Collaborative Filtering&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.scss.tcd.ie/~alainm/~alainm/publication/light_field_super_resolution_via_lfbm5d_sparse_coding/&#34; target=&#34;_blank&#34;&gt;Light Field Super-Resolution via LFBM5D Sparse Coding&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.scss.tcd.ie/~alainm/~alainm/publication/a_pipeline_for_lenslet_light_field_quality_enhancement/&#34; target=&#34;_blank&#34;&gt;A Pipeline for Lenslet Light Field Quality Enhancement&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.scss.tcd.ie/~alainm/~alainm/publication/interactive_light_field_tilt-shift_refocus/&#34; target=&#34;_blank&#34;&gt;Interactive Light Field Tilt-Shift Refocus&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.scss.tcd.ie/~alainm/~alainm/publication/a_study_of_light_field_streaming_for_interactive_refocusing/&#34; target=&#34;_blank&#34;&gt;A Study of Light Field Streaming for Interactive Refocusing&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.scss.tcd.ie/~alainm/~alainm/publication/self-supervised_light_field_view_synthesis_using_cycle_consistency/&#34; target=&#34;_blank&#34;&gt;Self-supervised light field view synthesis using cycle consistency&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.scss.tcd.ie/~alainm/~alainm/publication/a_spatio-angular_binary_descriptor_for_fast_light_field_inter_view_matching/&#34; target=&#34;_blank&#34;&gt;A Spatio-Angular Binary Descriptor for Fast Light Field Inter View Matching&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.scss.tcd.ie/~alainm/~alainm/publication/light_field_style_transfer_with_local_angular_consistency/&#34; target=&#34;_blank&#34;&gt;Light Field Style Transfer With Local Angular Consistency&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.scss.tcd.ie/~alainm/~alainm/publication/focus_guided_light_field_saliency_estimation/&#34; target=&#34;_blank&#34;&gt;Focus Guided Light Field Saliency Estimation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.scss.tcd.ie/~alainm/~alainm/publication/a_spatio-angular_filter_for_high_quality_sparse_light_field_refocusing/&#34; target=&#34;_blank&#34;&gt;A Spatio-Angular Filter for High Quality Sparse Light Field Refocusing&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
