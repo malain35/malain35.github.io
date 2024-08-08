@@ -1,2 +1,0 @@
-'pdf/slides_PhD_defense_MAlain.ppsx' filter=lfs diff=lfs merge=lfs -text
-'pdf/these_Martin_Alain.pdf' filter=lfs diff=lfs merge=lfs -text
